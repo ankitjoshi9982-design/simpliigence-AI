@@ -1,0 +1,1230 @@
+{
+ "home": {
+  "slug": "home",
+  "url": "/",
+  "label": "Home",
+  "title": "Simpliigence AI | AI Automation Platform Built on the Systems You Run",
+  "meta": "Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.",
+  "keyword": "AI automation platform",
+  "h1": "Outcomes,by design.",
+  "faq": [
+   {
+    "q": "Who is Simpliigence AI for?",
+    "a": "Simpliigence AI is for teams in any industry that want AI to deliver a measurable result and need help prioritising, scaling, reaching value sooner or tying AI to business goals, using the platforms they already have."
+   },
+   {
+    "q": "Why do businesses need AI automation?",
+    "a": "Work grows faster than headcount. AI automation lets a team handle more at the same quality, without adding people to repetitive tasks."
+   },
+   {
+    "q": "What does “outcomes, by design” mean?",
+    "a": "It means we agree the result first, design the system around it, and are paid when that result shows up."
+   },
+   {
+    "q": "What is an AI automation platform?",
+    "a": "An AI automation platform is the layer that lets AI read your data, decide the next step and act across your systems. We build that layer on the tools you already run."
+   },
+   {
+    "q": "Which option is right for my business?",
+    "a": "Growing businesses usually start with AI Agents, mid-market teams with Automation, and enterprises with Simpliigence AI. The AI Health Check tells you for sure."
+   },
+   {
+    "q": "How fast can we go live?",
+    "a": "A working pilot on your real data usually takes five to eight weeks."
+   },
+   {
+    "q": "Is Simpliigence AI part of Simpliigence?",
+    "a": "Yes. We share one delivery organisation with Simpliigence, a 250+ person Salesforce and AI firm."
+   }
+  ],
+  "graph": [
+   {
+    "@type": "Organization",
+    "@id": "https://simpliigence.ai/#org",
+    "name": "Simpliigence AI",
+    "url": "https://simpliigence.ai/",
+    "logo": "https://simpliigence.ai/wp-content/themes/simpliigence-ai/assets/img/logo-white.png",
+    "email": "hello@simpliigence.ai",
+    "slogan": "Outcomes, by design.",
+    "description": "Next-generation AI platform for the future of business automation. Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.",
+    "parentOrganization": {
+     "@type": "Organization",
+     "name": "Simpliigence"
+    },
+    "contactPoint": {
+     "@type": "ContactPoint",
+     "email": "hello@simpliigence.ai",
+     "contactType": "sales"
+    },
+    "address": {
+     "@type": "PostalAddress",
+     "addressRegion": "NJ",
+     "addressCountry": "US"
+    },
+    "areaServed": [
+     "US",
+     "CA",
+     "GB",
+     "NL",
+     "IN"
+    ]
+   },
+   {
+    "@type": "WebSite",
+    "@id": "https://simpliigence.ai/#website",
+    "url": "https://simpliigence.ai/",
+    "name": "Simpliigence AI",
+    "publisher": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://simpliigence.ai/#webpage",
+    "url": "https://simpliigence.ai/",
+    "name": "Simpliigence AI | AI Automation Platform Built on the Systems You Run",
+    "description": "Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.",
+    "isPartOf": {
+     "@id": "https://simpliigence.ai/#website"
+    },
+    "about": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en",
+    "keywords": "AI automation platform"
+   },
+   {
+    "@type": "FAQPage",
+    "@id": "https://simpliigence.ai/#faq",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Who is Simpliigence AI for?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Simpliigence AI is for teams in any industry that want AI to deliver a measurable result and need help prioritising, scaling, reaching value sooner or tying AI to business goals, using the platforms they already have."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Why do businesses need AI automation?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Work grows faster than headcount. AI automation lets a team handle more at the same quality, without adding people to repetitive tasks."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What does “outcomes, by design” mean?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It means we agree the result first, design the system around it, and are paid when that result shows up."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What is an AI automation platform?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "An AI automation platform is the layer that lets AI read your data, decide the next step and act across your systems. We build that layer on the tools you already run."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Which option is right for my business?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Growing businesses usually start with AI Agents, mid-market teams with Automation, and enterprises with Simpliigence AI. The AI Health Check tells you for sure."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How fast can we go live?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "A working pilot on your real data usually takes five to eight weeks."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Is Simpliigence AI part of Simpliigence?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. We share one delivery organisation with Simpliigence, a 250+ person Salesforce and AI firm."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "ai": {
+  "slug": "ai",
+  "url": "/ai/",
+  "label": "Simpliigence AI",
+  "title": "Enterprise AI Solutions on Your Own Model and Stack | Simpliigence AI",
+  "meta": "Simpliigence AI delivers enterprise AI solutions on the model you already license, inside your tenant and region. AI implementation services paid at evaluation gates, then run as a managed service.",
+  "keyword": "enterprise AI solutions",
+  "h1": "Your model. Your data. Our accountability.",
+  "faq": [
+   {
+    "q": "What are enterprise AI solutions?",
+    "a": "Enterprise AI solutions are software that reasons over your business data to support real decisions and actions, deployed inside your existing systems and security rules."
+   },
+   {
+    "q": "Do we need to buy a new AI platform?",
+    "a": "No. We build on the model and platforms you already license."
+   },
+   {
+    "q": "Does our data leave our environment?",
+    "a": "No. Everything runs inside your tenant and region, with your existing permissions."
+   },
+   {
+    "q": "How do payments work?",
+    "a": "The Health Check is a half-day session. The Discovery Sprint is fixed and credited to the build. The build is paid at evaluation gates."
+   },
+   {
+    "q": "Can we switch models later?",
+    "a": "Yes. The logic is designed to port, so a better model is an upgrade, not a rebuild."
+   }
+  ],
+  "graph": [
+   {
+    "@type": "Organization",
+    "@id": "https://simpliigence.ai/#org",
+    "name": "Simpliigence AI",
+    "url": "https://simpliigence.ai/",
+    "logo": "https://simpliigence.ai/wp-content/themes/simpliigence-ai/assets/img/logo-white.png",
+    "email": "hello@simpliigence.ai",
+    "slogan": "Outcomes, by design.",
+    "description": "Next-generation AI platform for the future of business automation. Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.",
+    "parentOrganization": {
+     "@type": "Organization",
+     "name": "Simpliigence"
+    },
+    "contactPoint": {
+     "@type": "ContactPoint",
+     "email": "hello@simpliigence.ai",
+     "contactType": "sales"
+    },
+    "address": {
+     "@type": "PostalAddress",
+     "addressRegion": "NJ",
+     "addressCountry": "US"
+    },
+    "areaServed": [
+     "US",
+     "CA",
+     "GB",
+     "NL",
+     "IN"
+    ]
+   },
+   {
+    "@type": "WebSite",
+    "@id": "https://simpliigence.ai/#website",
+    "url": "https://simpliigence.ai/",
+    "name": "Simpliigence AI",
+    "publisher": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://simpliigence.ai/ai/#webpage",
+    "url": "https://simpliigence.ai/ai/",
+    "name": "Enterprise AI Solutions on Your Own Model and Stack | Simpliigence AI",
+    "description": "Simpliigence AI delivers enterprise AI solutions on the model you already license, inside your tenant and region. AI implementation services paid at evaluation gates, then run as a managed service.",
+    "isPartOf": {
+     "@id": "https://simpliigence.ai/#website"
+    },
+    "about": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en",
+    "keywords": "enterprise AI solutions"
+   },
+   {
+    "@type": "BreadcrumbList",
+    "@id": "https://simpliigence.ai/ai/#breadcrumb",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://simpliigence.ai/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Simpliigence AI",
+      "item": "https://simpliigence.ai/ai/"
+     }
+    ]
+   },
+   {
+    "@type": "Service",
+    "name": "Simpliigence AI · Bring Your Own Intelligence",
+    "description": "Simpliigence AI delivers enterprise AI solutions on the model you already license, inside your tenant and region. AI implementation services paid at evaluation gates, then run as a managed service.",
+    "provider": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "url": "https://simpliigence.ai/ai/"
+   },
+   {
+    "@type": "FAQPage",
+    "@id": "https://simpliigence.ai/ai/#faq",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What are enterprise AI solutions?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Enterprise AI solutions are software that reasons over your business data to support real decisions and actions, deployed inside your existing systems and security rules."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do we need to buy a new AI platform?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "No. We build on the model and platforms you already license."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Does our data leave our environment?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "No. Everything runs inside your tenant and region, with your existing permissions."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How do payments work?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "The Health Check is a half-day session. The Discovery Sprint is fixed and credited to the build. The build is paid at evaluation gates."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can we switch models later?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. The logic is designed to port, so a better model is an upgrade, not a rebuild."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "automation": {
+  "slug": "automation",
+  "url": "/automation/",
+  "label": "Automation",
+  "title": "AI Workflow Automation Paid on a KPI | Simpliigence Automation",
+  "meta": "AI workflow automation that runs a business process to an agreed KPI. We size the opportunity before you pay, and the success fee is paid only when the number moves.",
+  "keyword": "AI workflow automation",
+  "h1": "Pay when the number moves.",
+  "faq": [
+   {
+    "q": "How does AI workflow automation work?",
+    "a": "AI workflow automation adds a layer that reads context, decides the next step and acts across your systems, so it handles the exceptions that break rule-based automation."
+   },
+   {
+    "q": "RPA or an AI agent, which do I need?",
+    "a": "It depends on how much the process changes. Stable, high-volume steps suit RPA; work that shifts or needs judgment suits an agent."
+   },
+   {
+    "q": "What do we pay before results show up?",
+    "a": "A retainer that covers setup and running. The success fee is paid only when the agreed KPI improves."
+   },
+   {
+    "q": "What if the number doesn't move?",
+    "a": "Then the success fee isn't paid. That's the point of the model."
+   },
+   {
+    "q": "What happens after the measurement window?",
+    "a": "Most clients keep the process running with us on a renewed target, or move to a managed service."
+   }
+  ],
+  "graph": [
+   {
+    "@type": "Organization",
+    "@id": "https://simpliigence.ai/#org",
+    "name": "Simpliigence AI",
+    "url": "https://simpliigence.ai/",
+    "logo": "https://simpliigence.ai/wp-content/themes/simpliigence-ai/assets/img/logo-white.png",
+    "email": "hello@simpliigence.ai",
+    "slogan": "Outcomes, by design.",
+    "description": "Next-generation AI platform for the future of business automation. Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.",
+    "parentOrganization": {
+     "@type": "Organization",
+     "name": "Simpliigence"
+    },
+    "contactPoint": {
+     "@type": "ContactPoint",
+     "email": "hello@simpliigence.ai",
+     "contactType": "sales"
+    },
+    "address": {
+     "@type": "PostalAddress",
+     "addressRegion": "NJ",
+     "addressCountry": "US"
+    },
+    "areaServed": [
+     "US",
+     "CA",
+     "GB",
+     "NL",
+     "IN"
+    ]
+   },
+   {
+    "@type": "WebSite",
+    "@id": "https://simpliigence.ai/#website",
+    "url": "https://simpliigence.ai/",
+    "name": "Simpliigence AI",
+    "publisher": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://simpliigence.ai/automation/#webpage",
+    "url": "https://simpliigence.ai/automation/",
+    "name": "AI Workflow Automation Paid on a KPI | Simpliigence Automation",
+    "description": "AI workflow automation that runs a business process to an agreed KPI. We size the opportunity before you pay, and the success fee is paid only when the number moves.",
+    "isPartOf": {
+     "@id": "https://simpliigence.ai/#website"
+    },
+    "about": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en",
+    "keywords": "AI workflow automation"
+   },
+   {
+    "@type": "BreadcrumbList",
+    "@id": "https://simpliigence.ai/automation/#breadcrumb",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://simpliigence.ai/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Automation",
+      "item": "https://simpliigence.ai/automation/"
+     }
+    ]
+   },
+   {
+    "@type": "Service",
+    "name": "Simpliigence Automation · Outcome-as-a-Service",
+    "description": "AI workflow automation that runs a business process to an agreed KPI. We size the opportunity before you pay, and the success fee is paid only when the number moves.",
+    "provider": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "url": "https://simpliigence.ai/automation/"
+   },
+   {
+    "@type": "FAQPage",
+    "@id": "https://simpliigence.ai/automation/#faq",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "How does AI workflow automation work?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "AI workflow automation adds a layer that reads context, decides the next step and acts across your systems, so it handles the exceptions that break rule-based automation."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "RPA or an AI agent, which do I need?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "It depends on how much the process changes. Stable, high-volume steps suit RPA; work that shifts or needs judgment suits an agent."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What do we pay before results show up?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "A retainer that covers setup and running. The success fee is paid only when the agreed KPI improves."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What if the number doesn't move?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Then the success fee isn't paid. That's the point of the model."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What happens after the measurement window?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Most clients keep the process running with us on a renewed target, or move to a managed service."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "agents": {
+  "slug": "agents",
+  "url": "/agents/",
+  "label": "AI Agents",
+  "title": "AI Agents for Business, Set Up and Run for You | AgentBox by Simpliigence AI",
+  "meta": "AI-powered business automation for small and mid-sized teams. Pick agents from a library of 36 across finance, sales, service, HR, ops and marketing. We configure, personalise and run them.",
+  "keyword": "AI-powered business automation",
+  "h1": "Your own AI team, without hiring one.",
+  "faq": [
+   {
+    "q": "What is an AI agent?",
+    "a": "An AI agent is software that completes a multi-step task on its own using your tools and data, rather than just replying to a prompt."
+   },
+   {
+    "q": "Do I need an IT team?",
+    "a": "No. We handle setup, integrations and running the agents."
+   },
+   {
+    "q": "Which tools do the agents work with?",
+    "a": "The ones you already use, including Salesforce, QuickBooks, Microsoft 365, Google Workspace, Slack and Teams."
+   },
+   {
+    "q": "Can I change agents later?",
+    "a": "Yes. One swap a quarter is included, and you can move up a plan any time."
+   },
+   {
+    "q": "How is AI used for customer support automation?",
+    "a": "A support agent reads each new case, sorts it, drafts the first reply and routes anything unusual to a person, so your team spends time on the cases that need them."
+   }
+  ],
+  "graph": [
+   {
+    "@type": "Organization",
+    "@id": "https://simpliigence.ai/#org",
+    "name": "Simpliigence AI",
+    "url": "https://simpliigence.ai/",
+    "logo": "https://simpliigence.ai/wp-content/themes/simpliigence-ai/assets/img/logo-white.png",
+    "email": "hello@simpliigence.ai",
+    "slogan": "Outcomes, by design.",
+    "description": "Next-generation AI platform for the future of business automation. Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.",
+    "parentOrganization": {
+     "@type": "Organization",
+     "name": "Simpliigence"
+    },
+    "contactPoint": {
+     "@type": "ContactPoint",
+     "email": "hello@simpliigence.ai",
+     "contactType": "sales"
+    },
+    "address": {
+     "@type": "PostalAddress",
+     "addressRegion": "NJ",
+     "addressCountry": "US"
+    },
+    "areaServed": [
+     "US",
+     "CA",
+     "GB",
+     "NL",
+     "IN"
+    ]
+   },
+   {
+    "@type": "WebSite",
+    "@id": "https://simpliigence.ai/#website",
+    "url": "https://simpliigence.ai/",
+    "name": "Simpliigence AI",
+    "publisher": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://simpliigence.ai/agents/#webpage",
+    "url": "https://simpliigence.ai/agents/",
+    "name": "AI Agents for Business, Set Up and Run for You | AgentBox by Simpliigence AI",
+    "description": "AI-powered business automation for small and mid-sized teams. Pick agents from a library of 36 across finance, sales, service, HR, ops and marketing. We configure, personalise and run them.",
+    "isPartOf": {
+     "@id": "https://simpliigence.ai/#website"
+    },
+    "about": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en",
+    "keywords": "AI-powered business automation"
+   },
+   {
+    "@type": "BreadcrumbList",
+    "@id": "https://simpliigence.ai/agents/#breadcrumb",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://simpliigence.ai/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI Agents",
+      "item": "https://simpliigence.ai/agents/"
+     }
+    ]
+   },
+   {
+    "@type": "Service",
+    "name": "AI Agents · AgentBox",
+    "description": "AI-powered business automation for small and mid-sized teams. Pick agents from a library of 36 across finance, sales, service, HR, ops and marketing. We configure, personalise and run them.",
+    "provider": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "url": "https://simpliigence.ai/agents/"
+   },
+   {
+    "@type": "FAQPage",
+    "@id": "https://simpliigence.ai/agents/#faq",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What is an AI agent?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "An AI agent is software that completes a multi-step task on its own using your tools and data, rather than just replying to a prompt."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do I need an IT team?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "No. We handle setup, integrations and running the agents."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Which tools do the agents work with?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "The ones you already use, including Salesforce, QuickBooks, Microsoft 365, Google Workspace, Slack and Teams."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can I change agents later?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes. One swap a quarter is included, and you can move up a plan any time."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How is AI used for customer support automation?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "A support agent reads each new case, sorts it, drafts the first reply and routes anything unusual to a person, so your team spends time on the cases that need them."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "industries": {
+  "slug": "industries",
+  "url": "/industries/",
+  "label": "Industries",
+  "title": "AI Transformation for Businesses by Industry | Simpliigence AI",
+  "meta": "Examples of AI in business automation across manufacturing, real estate, field services, payments, financial services and more. See the challenges we solve and the agents we recommend.",
+  "keyword": "AI transformation for businesses",
+  "h1": "Different industries. The same question: where does the time go?",
+  "faq": [
+   {
+    "q": "What are examples of AI in business automation?",
+    "a": "Common examples are matching payments to invoices, drafting quotes from CRM data, triaging service cases, capturing supplier tenders and processing claims without manual entry."
+   },
+   {
+    "q": "How does AI help with operations management?",
+    "a": "AI agents take on the repetitive steps in operations, such as tracking orders, updating records and flagging exceptions, so people focus on the decisions."
+   },
+   {
+    "q": "Do you only work in these industries?",
+    "a": "No. These are where we have the most depth. The approach works wherever a process runs on data and repeats."
+   }
+  ],
+  "graph": [
+   {
+    "@type": "Organization",
+    "@id": "https://simpliigence.ai/#org",
+    "name": "Simpliigence AI",
+    "url": "https://simpliigence.ai/",
+    "logo": "https://simpliigence.ai/wp-content/themes/simpliigence-ai/assets/img/logo-white.png",
+    "email": "hello@simpliigence.ai",
+    "slogan": "Outcomes, by design.",
+    "description": "Next-generation AI platform for the future of business automation. Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.",
+    "parentOrganization": {
+     "@type": "Organization",
+     "name": "Simpliigence"
+    },
+    "contactPoint": {
+     "@type": "ContactPoint",
+     "email": "hello@simpliigence.ai",
+     "contactType": "sales"
+    },
+    "address": {
+     "@type": "PostalAddress",
+     "addressRegion": "NJ",
+     "addressCountry": "US"
+    },
+    "areaServed": [
+     "US",
+     "CA",
+     "GB",
+     "NL",
+     "IN"
+    ]
+   },
+   {
+    "@type": "WebSite",
+    "@id": "https://simpliigence.ai/#website",
+    "url": "https://simpliigence.ai/",
+    "name": "Simpliigence AI",
+    "publisher": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://simpliigence.ai/industries/#webpage",
+    "url": "https://simpliigence.ai/industries/",
+    "name": "AI Transformation for Businesses by Industry | Simpliigence AI",
+    "description": "Examples of AI in business automation across manufacturing, real estate, field services, payments, financial services and more. See the challenges we solve and the agents we recommend.",
+    "isPartOf": {
+     "@id": "https://simpliigence.ai/#website"
+    },
+    "about": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en",
+    "keywords": "AI transformation for businesses"
+   },
+   {
+    "@type": "BreadcrumbList",
+    "@id": "https://simpliigence.ai/industries/#breadcrumb",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://simpliigence.ai/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Industries",
+      "item": "https://simpliigence.ai/industries/"
+     }
+    ]
+   },
+   {
+    "@type": "FAQPage",
+    "@id": "https://simpliigence.ai/industries/#faq",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What are examples of AI in business automation?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Common examples are matching payments to invoices, drafting quotes from CRM data, triaging service cases, capturing supplier tenders and processing claims without manual entry."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How does AI help with operations management?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "AI agents take on the repetitive steps in operations, such as tracking orders, updating records and flagging exceptions, so people focus on the decisions."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you only work in these industries?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "No. These are where we have the most depth. The approach works wherever a process runs on data and repeats."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "resources": {
+  "slug": "resources",
+  "url": "/resources/",
+  "label": "Resources",
+  "title": "AI Automation Resources, Results and Guides | Simpliigence AI",
+  "meta": "What an AI automation platform is, how AI automation works in business, and real results from AI agents in production. Case studies and plain-English guides from Simpliigence AI.",
+  "keyword": "what is an AI automation platform",
+  "h1": "What AI automation looks like when it's working.",
+  "faq": [
+   {
+    "q": "What is an AI automation platform?",
+    "a": "An AI automation platform is the layer that lets AI read business data, decide the next step and act across your systems. It differs from traditional automation because it handles exceptions and changing inputs instead of breaking on them."
+   },
+   {
+    "q": "How does AI automation work in business?",
+    "a": "An AI model reads a request or record, pulls the context it needs from your systems, and proposes or takes the next action. A person approves anything that matters until the agent has proved its accuracy on your own data."
+   },
+   {
+    "q": "How do you automate workflows using AI?",
+    "a": "Start with one process that repeats and costs time. Map it, remove the waste, then let an agent handle the steps that need judgment and a workflow tool handle the ones that don't."
+   },
+   {
+    "q": "What are the benefits of AI in enterprises?",
+    "a": "The biggest gains come from fewer manual hours per transaction, faster cycle times such as quote-to-cash, and less revenue lost to errors and missed billing."
+   },
+   {
+    "q": "Why do businesses need AI automation?",
+    "a": "Volume grows faster than headcount. AI automation lets a team handle more work at the same quality without adding people to repetitive tasks."
+   },
+   {
+    "q": "What are examples of AI in business automation?",
+    "a": "Matching payments to invoices, drafting quotes from CRM data, triaging service cases, capturing supplier tenders and processing insurance or warranty claims."
+   }
+  ],
+  "graph": [
+   {
+    "@type": "Organization",
+    "@id": "https://simpliigence.ai/#org",
+    "name": "Simpliigence AI",
+    "url": "https://simpliigence.ai/",
+    "logo": "https://simpliigence.ai/wp-content/themes/simpliigence-ai/assets/img/logo-white.png",
+    "email": "hello@simpliigence.ai",
+    "slogan": "Outcomes, by design.",
+    "description": "Next-generation AI platform for the future of business automation. Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.",
+    "parentOrganization": {
+     "@type": "Organization",
+     "name": "Simpliigence"
+    },
+    "contactPoint": {
+     "@type": "ContactPoint",
+     "email": "hello@simpliigence.ai",
+     "contactType": "sales"
+    },
+    "address": {
+     "@type": "PostalAddress",
+     "addressRegion": "NJ",
+     "addressCountry": "US"
+    },
+    "areaServed": [
+     "US",
+     "CA",
+     "GB",
+     "NL",
+     "IN"
+    ]
+   },
+   {
+    "@type": "WebSite",
+    "@id": "https://simpliigence.ai/#website",
+    "url": "https://simpliigence.ai/",
+    "name": "Simpliigence AI",
+    "publisher": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://simpliigence.ai/resources/#webpage",
+    "url": "https://simpliigence.ai/resources/",
+    "name": "AI Automation Resources, Results and Guides | Simpliigence AI",
+    "description": "What an AI automation platform is, how AI automation works in business, and real results from AI agents in production. Case studies and plain-English guides from Simpliigence AI.",
+    "isPartOf": {
+     "@id": "https://simpliigence.ai/#website"
+    },
+    "about": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en",
+    "keywords": "what is an AI automation platform"
+   },
+   {
+    "@type": "BreadcrumbList",
+    "@id": "https://simpliigence.ai/resources/#breadcrumb",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://simpliigence.ai/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Resources",
+      "item": "https://simpliigence.ai/resources/"
+     }
+    ]
+   },
+   {
+    "@type": "FAQPage",
+    "@id": "https://simpliigence.ai/resources/#faq",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "What is an AI automation platform?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "An AI automation platform is the layer that lets AI read business data, decide the next step and act across your systems. It differs from traditional automation because it handles exceptions and changing inputs instead of breaking on them."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How does AI automation work in business?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "An AI model reads a request or record, pulls the context it needs from your systems, and proposes or takes the next action. A person approves anything that matters until the agent has proved its accuracy on your own data."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How do you automate workflows using AI?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Start with one process that repeats and costs time. Map it, remove the waste, then let an agent handle the steps that need judgment and a workflow tool handle the ones that don't."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What are the benefits of AI in enterprises?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "The biggest gains come from fewer manual hours per transaction, faster cycle times such as quote-to-cash, and less revenue lost to errors and missed billing."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Why do businesses need AI automation?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Volume grows faster than headcount. AI automation lets a team handle more work at the same quality without adding people to repetitive tasks."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What are examples of AI in business automation?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Matching payments to invoices, drafting quotes from CRM data, triaging service cases, capturing supplier tenders and processing insurance or warranty claims."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "tools": {
+  "slug": "tools",
+  "url": "/tools/",
+  "label": "Tools",
+  "title": "AI-Driven Decision-Making Tools for Business Efficiency | Simpliigence AI",
+  "meta": "Free tools to find where AI would save your team the most time: an AI readiness check, a time-savings estimate and an agent picker. Results in minutes.",
+  "keyword": "AI-driven decision-making tools",
+  "h1": "Find out where AI would help, in a few minutes.",
+  "faq": [
+   {
+    "q": "Are the results accurate?",
+    "a": "They're a starting point based on what you enter. A Discovery Sprint measures the real number on your own data."
+   },
+   {
+    "q": "Do I need to give my email?",
+    "a": "No. You see your result straight away. Email is only needed if you'd like a copy sent to you."
+   }
+  ],
+  "graph": [
+   {
+    "@type": "Organization",
+    "@id": "https://simpliigence.ai/#org",
+    "name": "Simpliigence AI",
+    "url": "https://simpliigence.ai/",
+    "logo": "https://simpliigence.ai/wp-content/themes/simpliigence-ai/assets/img/logo-white.png",
+    "email": "hello@simpliigence.ai",
+    "slogan": "Outcomes, by design.",
+    "description": "Next-generation AI platform for the future of business automation. Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.",
+    "parentOrganization": {
+     "@type": "Organization",
+     "name": "Simpliigence"
+    },
+    "contactPoint": {
+     "@type": "ContactPoint",
+     "email": "hello@simpliigence.ai",
+     "contactType": "sales"
+    },
+    "address": {
+     "@type": "PostalAddress",
+     "addressRegion": "NJ",
+     "addressCountry": "US"
+    },
+    "areaServed": [
+     "US",
+     "CA",
+     "GB",
+     "NL",
+     "IN"
+    ]
+   },
+   {
+    "@type": "WebSite",
+    "@id": "https://simpliigence.ai/#website",
+    "url": "https://simpliigence.ai/",
+    "name": "Simpliigence AI",
+    "publisher": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://simpliigence.ai/tools/#webpage",
+    "url": "https://simpliigence.ai/tools/",
+    "name": "AI-Driven Decision-Making Tools for Business Efficiency | Simpliigence AI",
+    "description": "Free tools to find where AI would save your team the most time: an AI readiness check, a time-savings estimate and an agent picker. Results in minutes.",
+    "isPartOf": {
+     "@id": "https://simpliigence.ai/#website"
+    },
+    "about": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en",
+    "keywords": "AI-driven decision-making tools"
+   },
+   {
+    "@type": "BreadcrumbList",
+    "@id": "https://simpliigence.ai/tools/#breadcrumb",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://simpliigence.ai/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Tools",
+      "item": "https://simpliigence.ai/tools/"
+     }
+    ]
+   },
+   {
+    "@type": "FAQPage",
+    "@id": "https://simpliigence.ai/tools/#faq",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "Are the results accurate?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "They're a starting point based on what you enter. A Discovery Sprint measures the real number on your own data."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do I need to give my email?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "No. You see your result straight away. Email is only needed if you'd like a copy sent to you."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "company": {
+  "slug": "company",
+  "url": "/company/",
+  "label": "Company",
+  "title": "About Simpliigence AI | Intelligent Enterprise Solutions from the Simpliigence Family",
+  "meta": "Simpliigence AI is an AI-first company headquartered in New Jersey, with engineering in Bangalore and a 250+ person bench delivering AI technology for business across three time zones.",
+  "keyword": "intelligent enterprise solutions",
+  "h1": "An AI-first company with six years of delivery behind it.",
+  "faq": [],
+  "graph": [
+   {
+    "@type": "Organization",
+    "@id": "https://simpliigence.ai/#org",
+    "name": "Simpliigence AI",
+    "url": "https://simpliigence.ai/",
+    "logo": "https://simpliigence.ai/wp-content/themes/simpliigence-ai/assets/img/logo-white.png",
+    "email": "hello@simpliigence.ai",
+    "slogan": "Outcomes, by design.",
+    "description": "Next-generation AI platform for the future of business automation. Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.",
+    "parentOrganization": {
+     "@type": "Organization",
+     "name": "Simpliigence"
+    },
+    "contactPoint": {
+     "@type": "ContactPoint",
+     "email": "hello@simpliigence.ai",
+     "contactType": "sales"
+    },
+    "address": {
+     "@type": "PostalAddress",
+     "addressRegion": "NJ",
+     "addressCountry": "US"
+    },
+    "areaServed": [
+     "US",
+     "CA",
+     "GB",
+     "NL",
+     "IN"
+    ]
+   },
+   {
+    "@type": "WebSite",
+    "@id": "https://simpliigence.ai/#website",
+    "url": "https://simpliigence.ai/",
+    "name": "Simpliigence AI",
+    "publisher": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://simpliigence.ai/company/#webpage",
+    "url": "https://simpliigence.ai/company/",
+    "name": "About Simpliigence AI | Intelligent Enterprise Solutions from the Simpliigence Family",
+    "description": "Simpliigence AI is an AI-first company headquartered in New Jersey, with engineering in Bangalore and a 250+ person bench delivering AI technology for business across three time zones.",
+    "isPartOf": {
+     "@id": "https://simpliigence.ai/#website"
+    },
+    "about": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en",
+    "keywords": "intelligent enterprise solutions"
+   },
+   {
+    "@type": "BreadcrumbList",
+    "@id": "https://simpliigence.ai/company/#breadcrumb",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://simpliigence.ai/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Company",
+      "item": "https://simpliigence.ai/company/"
+     }
+    ]
+   }
+  ]
+ },
+ "contact": {
+  "slug": "contact",
+  "url": "/contact/",
+  "label": "Contact",
+  "title": "Contact Simpliigence AI | Book an AI Health Check",
+  "meta": "Talk to a Solution Architect about AI implementation services. Book a half-day AI Health Check, a two-week Discovery Sprint or an architecture session.",
+  "keyword": "AI implementation services",
+  "h1": "Bring us one process your team still runs by hand.",
+  "faq": [],
+  "graph": [
+   {
+    "@type": "Organization",
+    "@id": "https://simpliigence.ai/#org",
+    "name": "Simpliigence AI",
+    "url": "https://simpliigence.ai/",
+    "logo": "https://simpliigence.ai/wp-content/themes/simpliigence-ai/assets/img/logo-white.png",
+    "email": "hello@simpliigence.ai",
+    "slogan": "Outcomes, by design.",
+    "description": "Next-generation AI platform for the future of business automation. Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.",
+    "parentOrganization": {
+     "@type": "Organization",
+     "name": "Simpliigence"
+    },
+    "contactPoint": {
+     "@type": "ContactPoint",
+     "email": "hello@simpliigence.ai",
+     "contactType": "sales"
+    },
+    "address": {
+     "@type": "PostalAddress",
+     "addressRegion": "NJ",
+     "addressCountry": "US"
+    },
+    "areaServed": [
+     "US",
+     "CA",
+     "GB",
+     "NL",
+     "IN"
+    ]
+   },
+   {
+    "@type": "WebSite",
+    "@id": "https://simpliigence.ai/#website",
+    "url": "https://simpliigence.ai/",
+    "name": "Simpliigence AI",
+    "publisher": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en"
+   },
+   {
+    "@type": "WebPage",
+    "@id": "https://simpliigence.ai/contact/#webpage",
+    "url": "https://simpliigence.ai/contact/",
+    "name": "Contact Simpliigence AI | Book an AI Health Check",
+    "description": "Talk to a Solution Architect about AI implementation services. Book a half-day AI Health Check, a two-week Discovery Sprint or an architecture session.",
+    "isPartOf": {
+     "@id": "https://simpliigence.ai/#website"
+    },
+    "about": {
+     "@id": "https://simpliigence.ai/#org"
+    },
+    "inLanguage": "en",
+    "keywords": "AI implementation services"
+   },
+   {
+    "@type": "BreadcrumbList",
+    "@id": "https://simpliigence.ai/contact/#breadcrumb",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://simpliigence.ai/"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Contact",
+      "item": "https://simpliigence.ai/contact/"
+     }
+    ]
+   }
+  ]
+ }
+}

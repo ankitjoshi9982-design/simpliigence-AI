@@ -1,0 +1,5 @@
+__pycache__/
+source/preview/
+source/dist/
+source/data/
+.DS_Store

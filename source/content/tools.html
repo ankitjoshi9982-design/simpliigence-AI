@@ -1,0 +1,47 @@
+<section class="hero page-hero"><canvas class="neural" data-neural aria-hidden="true"></canvas><div class="wrap hero-grid">
+<div class="rv">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">/</span><span>Tools</span></nav>
+<span class="pill"><span class="dot"></span>Tools</span>
+<h1>Find out where AI would help, <span class="grad">in a few minutes.</span></h1>
+<p class="lead">Three free tools. No sign-up to see your result. If you'd like to go further, an architect picks it up from there.</p>
+<div class="tool-jump"><a href="#readiness"><span class="tn">01</span>AI Readiness Check</a><a href="#time-savings"><span class="tn">02</span>Time Savings Estimate</a><a href="#agent-picker"><span class="tn">03</span>Agent Picker</a></div>
+</div>
+<div class="rv rv-d2"><div class="hv-gauge" aria-hidden="true"><svg viewBox="0 0 200 200"><circle class="t" cx="100" cy="100" r="84"/><circle class="v" cx="100" cy="100" r="84" pathLength="100"/></svg><div class="hg-in">{{i:gauge}}</div><span class="hg-o o1"></span><span class="hg-o o2"></span></div></div>
+</div></section>
+
+<section class="sec" id="readiness"><div class="wrap tool">
+<div class="tool-head rv"><span class="eyebrow">Tool 1 · AI Readiness Check</span><h2 class="h2">How ready is your team for AI?</h2><p class="lead">Eight quick questions about your data, your systems and how your team works. You get a readiness score and the two areas to fix first.</p><button class="btn btn-primary mt-s" type="button" data-quiz-start>Start the check{{i:arrow}}</button></div>
+<div class="tool-panel rv rv-d1" data-quiz><div class="tp-bar"><i data-quiz-bar></i></div><div data-quiz-body><div class="tp-idle"><div class="hv-gauge sm" aria-hidden="true"><svg viewBox="0 0 200 200"><circle class="t" cx="100" cy="100" r="84"/><circle class="v" cx="100" cy="100" r="84" pathLength="100" style="stroke-dasharray:0 100"/></svg><div class="hg-in"><b>0</b></div></div></div></div></div>
+</div></section>
+
+<section class="sec" id="time-savings"><div class="wrap tool">
+<div class="tool-head rv"><span class="eyebrow">Tool 2 · Time Savings Estimate</span><h2 class="h2">What is one manual process costing you?</h2><p class="lead">Tell us how many times a week it runs, how long each one takes and how often it goes wrong. We show the hours you could get back each month.</p></div>
+<div class="tool-panel rv rv-d1" data-est>
+<label class="rng"><span>Transactions per week <output data-o="tx">40</output></span><input type="range" min="5" max="1000" step="5" value="40" data-r="tx"></label>
+<label class="rng"><span>Minutes per transaction <output data-o="min">15</output></span><input type="range" min="1" max="120" value="15" data-r="min"></label>
+<label class="rng"><span>Error or rework rate <output data-o="err">10%</output></span><input type="range" min="0" max="50" value="10" data-r="err"></label>
+<label class="rng"><span>People involved <output data-o="ppl">3</output></span><input type="range" min="1" max="50" value="3" data-r="ppl"></label>
+<div class="est-out"><span class="hw-k">Hours you could get back</span><b data-est-out>0</b><em>hrs/mo</em><p>An estimated range, based on a typical automation level for this kind of work. The real number comes from your own data in a Discovery Sprint.</p>
+<div class="btn-row"><button class="btn btn-sm" type="button" data-est-ask>Talk it through with our assistant</button><a class="btn btn-primary btn-sm" href="/contact/?type=Book+an+AI+Health+Check">Book an AI Health Check</a></div></div>
+<button class="btn btn-primary" type="button" data-est-go>Estimate my savings{{i:arrow}}</button>
+</div>
+</div></section>
+
+<section class="sec" id="agent-picker"><div class="wrap tool">
+<div class="tool-head rv"><span class="eyebrow">Tool 3 · Agent Picker</span><h2 class="h2">Which three agents would help you most?</h2><p class="lead">Pick your team and your biggest time sink. We suggest three agents from the library and how they'd work together.</p></div>
+<div class="tool-panel rv rv-d1" data-pick>
+<fieldset><legend>Team</legend><div class="seg" data-team><button type="button" class="on" data-v="finance">Finance</button><button type="button" data-v="sales">Sales</button><button type="button" data-v="service">Service</button><button type="button" data-v="operations">Ops</button><button type="button" data-v="hr">HR</button><button type="button" data-v="marketing">Marketing</button></div></fieldset>
+<label class="fld"><span>Biggest time sink</span><input type="text" data-sink autocomplete="off"></label>
+<fieldset><legend>Tools you use</legend><div class="seg multi" data-tools><button type="button" data-v="Salesforce">Salesforce</button><button type="button" data-v="QuickBooks">QuickBooks</button><button type="button" data-v="Microsoft 365">Microsoft 365</button><button type="button" data-v="Google Workspace">Google Workspace</button><button type="button" data-v="Slack">Slack</button><button type="button" data-v="Teams">Teams</button></div></fieldset>
+<button class="btn btn-primary" type="button" data-pick-go>Pick my agents{{i:arrow}}</button>
+<div class="pick-out" data-pick-out></div>
+</div>
+</div></section>
+
+<section class="sec" id="faq"><div class="wrap split">
+<div class="sec-head sticky rv"><h2 class="h2">FAQ</h2></div>
+<div class="faq rv rv-d1">
+<details open><summary>Are the results accurate?<span class="pm"></span></summary><div class="a">They're a starting point based on what you enter. A Discovery Sprint measures the real number on your own data.</div></details>
+<details><summary>Do I need to give my email?<span class="pm"></span></summary><div class="a">No. You see your result straight away. Email is only needed if you'd like a copy sent to you.</div></details>
+</div>
+</div></section>

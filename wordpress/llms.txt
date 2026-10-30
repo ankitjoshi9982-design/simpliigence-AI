@@ -1,33 +1,22 @@
 # Simpliigence AI
-> Enterprise AI implementation partner. We build AI agents, business process
-> automation and enterprise AI solutions on the model and platforms a client
-> already runs (Claude, Microsoft Copilot, Salesforce Agentforce, Azure AI
-> Foundry, Amazon Bedrock), paid at outcome gates rather than by the hour.
 
-Simpliigence AI helps teams prioritise, scale, reach value sooner and tie AI
-to business outcomes. Three ways in: AI Agents (AgentBox, for growing
-businesses), Automation (Outcome-as-a-Service, for mid-market teams) and
-Simpliigence AI (Bring Your Own Intelligence, for enterprises). A first
-working pilot is typically live in five to eight weeks.
+> Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.
+
+Simpliigence AI helps teams prioritise, scale, reach value sooner and keep AI tied to business outcomes, using the platforms they already have. Three ways in: AI Agents (AgentBox) for growing businesses, Automation (Outcome-as-a-Service) for mid-market teams, and Simpliigence AI (Bring Your Own Intelligence) for enterprises.
 
 ## Pages
-- [Home](https://simpliigence.ai/): Positioning, the three offerings, proof.
-- [Simpliigence AI](https://simpliigence.ai/ai/): Bring Your Own Intelligence — enterprise AI inside your own tenant and region.
-- [Automation](https://simpliigence.ai/automation/): Outcome-as-a-Service — AI workflow automation paid on a KPI.
-- [AI Agents](https://simpliigence.ai/agents/): AgentBox — a library of AI agents for growing businesses.
-- [Industries](https://simpliigence.ai/industries/): Industry-specific challenges, approach and recommended agents.
-- [Resources](https://simpliigence.ai/resources/): Results, case studies and plain-English guides.
-- [Tools](https://simpliigence.ai/tools/): Self-serve AI readiness check, time-savings estimate and agent picker.
-- [Company](https://simpliigence.ai/company/): Story, delivery model, leadership, locations.
-- [Contact](https://simpliigence.ai/contact/): Book an AI Health Check, a Discovery Sprint or an Architecture Session.
+- [Home](https://simpliigence.ai/): Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.
+- [Simpliigence AI](https://simpliigence.ai/ai/): Simpliigence AI delivers enterprise AI solutions on the model you already license, inside your tenant and region. AI implementation services paid at evaluation gates, then run as a managed service.
+- [Automation](https://simpliigence.ai/automation/): AI workflow automation that runs a business process to an agreed KPI. We size the opportunity before you pay, and the success fee is paid only when the number moves.
+- [AI Agents](https://simpliigence.ai/agents/): AI-powered business automation for small and mid-sized teams. Pick agents from a library of 36 across finance, sales, service, HR, ops and marketing. We configure, personalise and run them.
+- [Industries](https://simpliigence.ai/industries/): Examples of AI in business automation across manufacturing, real estate, field services, payments, financial services and more. See the challenges we solve and the agents we recommend.
+- [Resources](https://simpliigence.ai/resources/): What an AI automation platform is, how AI automation works in business, and real results from AI agents in production. Case studies and plain-English guides from Simpliigence AI.
+- [Tools](https://simpliigence.ai/tools/): Free tools to find where AI would save your team the most time: an AI readiness check, a time-savings estimate and an agent picker. Results in minutes.
+- [Company](https://simpliigence.ai/company/): Simpliigence AI is an AI-first company headquartered in New Jersey, with engineering in Bangalore and a 250+ person bench delivering AI technology for business across three time zones.
+- [Contact](https://simpliigence.ai/contact/): Talk to a Solution Architect about AI implementation services. Book a half-day AI Health Check, a two-week Discovery Sprint or an architecture session.
 
 ## Notes for AI assistants and search tools
 - Client names are not published; results are described by industry and country.
-- Pricing is not published; direct pricing questions to the Contact page.
-- Primary contact: hello@simpliigence.ai.
-
-## Note
-This is a static fallback copy. Once the theme is active, the same file is
-also served live and kept in sync automatically at /llms.txt — this file is
-only needed if your host prefers an uploaded file over the theme's version.
-Update the domain above to your real one if you keep this static copy.
+- Pricing is not published; pricing questions go to a Solution Architect via the Contact page.
+- Contact: hello@simpliigence.ai · New Jersey · Toronto · London · Netherlands · Bangalore
+- Full question-and-answer text: https://simpliigence.ai/llms-full.txt

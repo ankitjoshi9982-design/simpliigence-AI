@@ -1,28 +1,31 @@
-# Simpliigence AI — website
+# Simpliigence AI — website (v2)
 
-WordPress theme and content for [simpliigence.ai](https://simpliigence.ai).
+Dark AI-assistant website for [simpliigence.ai](https://simpliigence.ai), built from the approved copy
+(*Simpliigence_AI_Website_Copy_GTM_rewrite_2*). WordPress theme with nine designed pages, an AI assistant
+backed by a Knowledge Base, chat history, lead capture, FAQ schema and `llms.txt`.
+
+**Preview:** https://ankitjoshi9982-design.github.io/simpliigence-AI/ (static; saving leads and chats needs WordPress)
 
 | Path | What it is |
 | --- | --- |
-| `simpliigence-ai/` | Theme source (PHP templates, `style.css`, JS, schema, leads, `llms.txt` route) |
-| `wordpress/simpliigence-ai-theme.zip` | Ready-to-upload theme package (Appearance → Themes → Upload) |
-| `wordpress/simpliigence-ai-pages.wxr.xml` | The 9 pages with approved copy and Yoast SEO meta (Tools → Import → WordPress) |
-| `wordpress/llms.txt` | Static fallback; the theme serves `/llms.txt` live once active |
-| `wordpress/sitemap-fallback.xml` | Stopgap sitemap until Yoast's `/sitemap_index.xml` is live |
-| `INSTALL.md` | Step-by-step install on GoDaddy WordPress, plus open items |
+| `wordpress/simpliigence-ai-theme-v2.0.0.zip` | Upload in WordPress → Appearance → Themes → Add New → Upload. Activating it creates the 9 pages. |
+| `simpliigence-ai/` | The same theme, unzipped (PHP, assets, data) |
+| `INSTALL.md` | Install steps and where everything lives in wp-admin |
+| `wordpress/llms.txt`, `llms-full.txt` | Copies of the AI-search files the theme serves live |
+| `source/` | Build sources: page content (`content/`), CSS/JS/fonts (`assets/`), theme PHP (`theme-src/`), build scripts (`tools/`) |
 
-To rebuild the theme zip after editing the source:
+## In wp-admin after install
+- **Appearance → Simpliigence AI** — install/update pages (edited pages are never overwritten unless you tick the box)
+- **Knowledge Base** — every section and FAQ from the approved copy; the assistant answers from these
+- **Chat History** — every assistant conversation, plus **Unanswered questions**
+- **Agent Library** — add the 36 agents; the AI Agents page and the assistant use them
+- **Case Studies** — linked from the Resources results table
+- **Leads** — contact form, assistant and tool sign-ups (emailed to hello@simpliigence.ai once SMTP is set)
 
+## Rebuild after editing `source/`
 ```bash
-zip -r wordpress/simpliigence-ai-theme.zip simpliigence-ai
+cd source
+python3 tools/build.py     # static preview in source/preview/ + SEO data, llms.txt, knowledge base
+python3 tools/package.py   # theme zip in source/dist/
 ```
-
-## Preview
-
-A static preview of the 9 pages is hosted on GitHub Pages at
-https://ankitjoshi9982-design.github.io/simpliigence-AI/ (built from the `gh-pages` branch).
-Forms and the assistant can't save leads there, since that needs WordPress. To rebuild it:
-
-```bash
-python3 scripts/build_preview.py . _site /simpliigence-AI
-```
+Requires Python 3 and Node (for packaging the knowledge base).

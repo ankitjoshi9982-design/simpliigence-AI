@@ -1,17 +1,11 @@
-<?php
-/**
- * Generic Page template — used by every one of the 9 approved pages
- * (and by the front page too, since front-page.php defers to this when
- * absent). Content lives in the WordPress page itself (imported via the
- * WXR file, editable afterwards in the block editor or in Elementor),
- * not hard-coded in the theme — so editing a page in wp-admin is exactly
- * how you change what visitors see.
- */
+<?php if ( ! defined( 'ABSPATH' ) ) exit;
 get_header();
-if ( have_posts() ) :
-	while ( have_posts() ) :
-		the_post();
+while ( have_posts() ) : the_post();
+	if ( get_post_meta( get_the_ID(), '_sgai_page', true ) ) {
 		the_content();
-	endwhile;
-endif;
+	} else { ?>
+		<section class="hero page-hero"><div class="wrap"><h1><?php the_title(); ?></h1></div></section>
+		<section class="sec-tight"><div class="wrap entry"><?php the_content(); ?></div></section>
+	<?php }
+endwhile;
 get_footer();

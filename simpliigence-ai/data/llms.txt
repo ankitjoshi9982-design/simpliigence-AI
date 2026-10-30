@@ -1,0 +1,22 @@
+# Simpliigence AI
+
+> Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.
+
+Simpliigence AI helps teams prioritise, scale, reach value sooner and keep AI tied to business outcomes, using the platforms they already have. Three ways in: AI Agents (AgentBox) for growing businesses, Automation (Outcome-as-a-Service) for mid-market teams, and Simpliigence AI (Bring Your Own Intelligence) for enterprises.
+
+## Pages
+- [Home](https://simpliigence.ai/): Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.
+- [Simpliigence AI](https://simpliigence.ai/ai/): Simpliigence AI delivers enterprise AI solutions on the model you already license, inside your tenant and region. AI implementation services paid at evaluation gates, then run as a managed service.
+- [Automation](https://simpliigence.ai/automation/): AI workflow automation that runs a business process to an agreed KPI. We size the opportunity before you pay, and the success fee is paid only when the number moves.
+- [AI Agents](https://simpliigence.ai/agents/): AI-powered business automation for small and mid-sized teams. Pick agents from a library of 36 across finance, sales, service, HR, ops and marketing. We configure, personalise and run them.
+- [Industries](https://simpliigence.ai/industries/): Examples of AI in business automation across manufacturing, real estate, field services, payments, financial services and more. See the challenges we solve and the agents we recommend.
+- [Resources](https://simpliigence.ai/resources/): What an AI automation platform is, how AI automation works in business, and real results from AI agents in production. Case studies and plain-English guides from Simpliigence AI.
+- [Tools](https://simpliigence.ai/tools/): Free tools to find where AI would save your team the most time: an AI readiness check, a time-savings estimate and an agent picker. Results in minutes.
+- [Company](https://simpliigence.ai/company/): Simpliigence AI is an AI-first company headquartered in New Jersey, with engineering in Bangalore and a 250+ person bench delivering AI technology for business across three time zones.
+- [Contact](https://simpliigence.ai/contact/): Talk to a Solution Architect about AI implementation services. Book a half-day AI Health Check, a two-week Discovery Sprint or an architecture session.
+
+## Notes for AI assistants and search tools
+- Client names are not published; results are described by industry and country.
+- Pricing is not published; pricing questions go to a Solution Architect via the Contact page.
+- Contact: hello@simpliigence.ai · New Jersey · Toronto · London · Netherlands · Bangalore
+- Full question-and-answer text: https://simpliigence.ai/llms-full.txt

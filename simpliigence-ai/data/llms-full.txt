@@ -1,0 +1,157 @@
+# Simpliigence AI — full reference
+
+> Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.
+
+## Home (https://simpliigence.ai/)
+
+Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.
+
+Headline: Outcomes,by design.
+
+### Who is Simpliigence AI for?
+Simpliigence AI is for teams in any industry that want AI to deliver a measurable result and need help prioritising, scaling, reaching value sooner or tying AI to business goals, using the platforms they already have.
+
+### Why do businesses need AI automation?
+Work grows faster than headcount. AI automation lets a team handle more at the same quality, without adding people to repetitive tasks.
+
+### What does “outcomes, by design” mean?
+It means we agree the result first, design the system around it, and are paid when that result shows up.
+
+### What is an AI automation platform?
+An AI automation platform is the layer that lets AI read your data, decide the next step and act across your systems. We build that layer on the tools you already run.
+
+### Which option is right for my business?
+Growing businesses usually start with AI Agents, mid-market teams with Automation, and enterprises with Simpliigence AI. The AI Health Check tells you for sure.
+
+### How fast can we go live?
+A working pilot on your real data usually takes five to eight weeks.
+
+### Is Simpliigence AI part of Simpliigence?
+Yes. We share one delivery organisation with Simpliigence, a 250+ person Salesforce and AI firm.
+
+## Simpliigence AI (https://simpliigence.ai/ai/)
+
+Simpliigence AI delivers enterprise AI solutions on the model you already license, inside your tenant and region. AI implementation services paid at evaluation gates, then run as a managed service.
+
+Headline: Your model. Your data. Our accountability.
+
+### What are enterprise AI solutions?
+Enterprise AI solutions are software that reasons over your business data to support real decisions and actions, deployed inside your existing systems and security rules.
+
+### Do we need to buy a new AI platform?
+No. We build on the model and platforms you already license.
+
+### Does our data leave our environment?
+No. Everything runs inside your tenant and region, with your existing permissions.
+
+### How do payments work?
+The Health Check is a half-day session. The Discovery Sprint is fixed and credited to the build. The build is paid at evaluation gates.
+
+### Can we switch models later?
+Yes. The logic is designed to port, so a better model is an upgrade, not a rebuild.
+
+## Automation (https://simpliigence.ai/automation/)
+
+AI workflow automation that runs a business process to an agreed KPI. We size the opportunity before you pay, and the success fee is paid only when the number moves.
+
+Headline: Pay when the number moves.
+
+### How does AI workflow automation work?
+AI workflow automation adds a layer that reads context, decides the next step and acts across your systems, so it handles the exceptions that break rule-based automation.
+
+### RPA or an AI agent, which do I need?
+It depends on how much the process changes. Stable, high-volume steps suit RPA; work that shifts or needs judgment suits an agent.
+
+### What do we pay before results show up?
+A retainer that covers setup and running. The success fee is paid only when the agreed KPI improves.
+
+### What if the number doesn't move?
+Then the success fee isn't paid. That's the point of the model.
+
+### What happens after the measurement window?
+Most clients keep the process running with us on a renewed target, or move to a managed service.
+
+## AI Agents (https://simpliigence.ai/agents/)
+
+AI-powered business automation for small and mid-sized teams. Pick agents from a library of 36 across finance, sales, service, HR, ops and marketing. We configure, personalise and run them.
+
+Headline: Your own AI team, without hiring one.
+
+### What is an AI agent?
+An AI agent is software that completes a multi-step task on its own using your tools and data, rather than just replying to a prompt.
+
+### Do I need an IT team?
+No. We handle setup, integrations and running the agents.
+
+### Which tools do the agents work with?
+The ones you already use, including Salesforce, QuickBooks, Microsoft 365, Google Workspace, Slack and Teams.
+
+### Can I change agents later?
+Yes. One swap a quarter is included, and you can move up a plan any time.
+
+### How is AI used for customer support automation?
+A support agent reads each new case, sorts it, drafts the first reply and routes anything unusual to a person, so your team spends time on the cases that need them.
+
+## Industries (https://simpliigence.ai/industries/)
+
+Examples of AI in business automation across manufacturing, real estate, field services, payments, financial services and more. See the challenges we solve and the agents we recommend.
+
+Headline: Different industries. The same question: where does the time go?
+
+### What are examples of AI in business automation?
+Common examples are matching payments to invoices, drafting quotes from CRM data, triaging service cases, capturing supplier tenders and processing claims without manual entry.
+
+### How does AI help with operations management?
+AI agents take on the repetitive steps in operations, such as tracking orders, updating records and flagging exceptions, so people focus on the decisions.
+
+### Do you only work in these industries?
+No. These are where we have the most depth. The approach works wherever a process runs on data and repeats.
+
+## Resources (https://simpliigence.ai/resources/)
+
+What an AI automation platform is, how AI automation works in business, and real results from AI agents in production. Case studies and plain-English guides from Simpliigence AI.
+
+Headline: What AI automation looks like when it's working.
+
+### What is an AI automation platform?
+An AI automation platform is the layer that lets AI read business data, decide the next step and act across your systems. It differs from traditional automation because it handles exceptions and changing inputs instead of breaking on them.
+
+### How does AI automation work in business?
+An AI model reads a request or record, pulls the context it needs from your systems, and proposes or takes the next action. A person approves anything that matters until the agent has proved its accuracy on your own data.
+
+### How do you automate workflows using AI?
+Start with one process that repeats and costs time. Map it, remove the waste, then let an agent handle the steps that need judgment and a workflow tool handle the ones that don't.
+
+### What are the benefits of AI in enterprises?
+The biggest gains come from fewer manual hours per transaction, faster cycle times such as quote-to-cash, and less revenue lost to errors and missed billing.
+
+### Why do businesses need AI automation?
+Volume grows faster than headcount. AI automation lets a team handle more work at the same quality without adding people to repetitive tasks.
+
+### What are examples of AI in business automation?
+Matching payments to invoices, drafting quotes from CRM data, triaging service cases, capturing supplier tenders and processing insurance or warranty claims.
+
+## Tools (https://simpliigence.ai/tools/)
+
+Free tools to find where AI would save your team the most time: an AI readiness check, a time-savings estimate and an agent picker. Results in minutes.
+
+Headline: Find out where AI would help, in a few minutes.
+
+### Are the results accurate?
+They're a starting point based on what you enter. A Discovery Sprint measures the real number on your own data.
+
+### Do I need to give my email?
+No. You see your result straight away. Email is only needed if you'd like a copy sent to you.
+
+## Company (https://simpliigence.ai/company/)
+
+Simpliigence AI is an AI-first company headquartered in New Jersey, with engineering in Bangalore and a 250+ person bench delivering AI technology for business across three time zones.
+
+Headline: An AI-first company with six years of delivery behind it.
+
+## Contact (https://simpliigence.ai/contact/)
+
+Talk to a Solution Architect about AI implementation services. Book a half-day AI Health Check, a two-week Discovery Sprint or an architecture session.
+
+Headline: Bring us one process your team still runs by hand.
+

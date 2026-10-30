@@ -1,0 +1,51 @@
+"""Single source of truth for page metadata (titles and meta descriptions are verbatim from the approved copy)."""
+DOMAIN = "https://simpliigence.ai"
+ORG = {
+    "name": "Simpliigence AI",
+    "email": "hello@simpliigence.ai",
+    "slogan": "Outcomes, by design.",
+    # Brand-positioning phrases belong in Schema.org descriptions, not headlines (per the copy doc).
+    "description": "Simpliigence AI is a next-generation AI platform partner: AI agents, AI workflow automation and enterprise AI solutions built on the platforms you already run, paid on the outcome they deliver.",
+    "locations": ["New Jersey", "Toronto", "London", "Netherlands", "Bangalore"],
+    "parent": "Simpliigence",
+}
+
+# slug: url, body key, nav label, title, meta, primary keyword, assistant chip key
+PAGES = {
+ "home": ("/", "home", "Home",
+   "Simpliigence AI | AI Automation Platform Built on the Systems You Run",
+   "Know where AI fits next. Simpliigence AI helps you prioritise, scale and see value sooner with the tools you already have, and is paid on the outcome it delivers.",
+   "AI automation platform"),
+ "ai": ("/ai/", "ai", "Simpliigence AI",
+   "Enterprise AI Solutions on Your Own Model and Stack | Simpliigence AI",
+   "Simpliigence AI delivers enterprise AI solutions on the model you already license, inside your tenant and region. AI implementation services paid at evaluation gates, then run as a managed service.",
+   "enterprise AI solutions"),
+ "automation": ("/automation/", "automation", "Automation",
+   "AI Workflow Automation Paid on a KPI | Simpliigence Automation",
+   "AI workflow automation that runs a business process to an agreed KPI. We size the opportunity before you pay, and the success fee is paid only when the number moves.",
+   "AI workflow automation"),
+ "agents": ("/agents/", "agents", "AI Agents",
+   "AI Agents for Business, Set Up and Run for You | AgentBox by Simpliigence AI",
+   "AI-powered business automation for small and mid-sized teams. Pick agents from a library of 36 across finance, sales, service, HR, ops and marketing. We configure, personalise and run them.",
+   "AI-powered business automation"),
+ "industries": ("/industries/", "industries", "Industries",
+   "AI Transformation for Businesses by Industry | Simpliigence AI",
+   "Examples of AI in business automation across manufacturing, real estate, field services, payments, financial services and more. See the challenges we solve and the agents we recommend.",
+   "AI transformation for businesses"),
+ "resources": ("/resources/", "resources", "Resources",
+   "AI Automation Resources, Results and Guides | Simpliigence AI",
+   "What an AI automation platform is, how AI automation works in business, and real results from AI agents in production. Case studies and plain-English guides from Simpliigence AI.",
+   "what is an AI automation platform"),
+ "tools": ("/tools/", "tools", "Tools",
+   "AI-Driven Decision-Making Tools for Business Efficiency | Simpliigence AI",
+   "Free tools to find where AI would save your team the most time: an AI readiness check, a time-savings estimate and an agent picker. Results in minutes.",
+   "AI-driven decision-making tools"),
+ "company": ("/company/", "company", "Company",
+   "About Simpliigence AI | Intelligent Enterprise Solutions from the Simpliigence Family",
+   "Simpliigence AI is an AI-first company headquartered in New Jersey, with engineering in Bangalore and a 250+ person bench delivering AI technology for business across three time zones.",
+   "intelligent enterprise solutions"),
+ "contact": ("/contact/", "contact", "Contact",
+   "Contact Simpliigence AI | Book an AI Health Check",
+   "Talk to a Solution Architect about AI implementation services. Book a half-day AI Health Check, a two-week Discovery Sprint or an architecture session.",
+   "AI implementation services"),
+}
