@@ -20,9 +20,9 @@ $sgai_page_key = is_front_page() ? 'home' : ( is_page() ? get_queried_object()->
 <?php wp_body_open(); ?>
 
 <div class="ambient" aria-hidden="true">
-  <div class="orb" style="width:520px;height:520px;top:-160px;left:-120px;background:rgba(42,99,196,.26)"></div>
-  <div class="orb" style="width:420px;height:420px;top:10%;right:-140px;background:rgba(115,161,226,.14);animation-delay:-6s"></div>
-  <div class="orb" style="width:480px;height:480px;bottom:-180px;left:35%;background:rgba(31,74,144,.22);animation-delay:-12s"></div>
+  <div class="orb" style="width:520px;height:520px;top:-160px;left:-120px;background:rgba(16,37,72,.30)"></div>
+  <div class="orb" style="width:420px;height:420px;top:10%;right:-140px;background:rgba(81,113,158,.05);animation-delay:-6s"></div>
+  <div class="orb" style="width:480px;height:480px;bottom:-180px;left:35%;background:rgba(21,50,98,.15);animation-delay:-12s"></div>
 </div>
 
 <a href="#main" class="skip-link">Skip to content</a>

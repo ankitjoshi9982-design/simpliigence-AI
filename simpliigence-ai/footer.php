@@ -12,7 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
       <div>
         <h4>Ways in</h4>
         <ul>
-          <li><a href="<?php echo esc_url( home_url( '/ai/' ) ); ?>">Simpliigence AI</a></li>
           <li><a href="<?php echo esc_url( home_url( '/automation/' ) ); ?>">Simpliigence Automation</a></li>
           <li><a href="<?php echo esc_url( home_url( '/agents/' ) ); ?>">AI Agents</a></li>
         </ul>
@@ -35,8 +34,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; <?php echo esc_html( date( 'Y' ) ); ?> Simpliigence AI &middot; simpliigence.ai &middot; All rights reserved.</span>
-      <span>Simpliigence AI &middot; Simpliigence Automation &middot; AI Agents</span>
+      <span>&copy; <?php echo esc_html( date( 'Y' ) ); ?> simpliigence.ai &middot; All rights reserved.</span>
+      <span>Simpliigence Automation &middot; AI Agents</span>
     </div>
   </div>
 </footer>
