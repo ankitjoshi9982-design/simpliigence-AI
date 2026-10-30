@@ -14,6 +14,7 @@ def render_icons(s):
     return re.sub(r"\{\{i:([a-z]+)\}\}", lambda m: ico(m.group(1)), s)
 
 def text(s):
+    s = re.sub(r"\{\{i:\w+\}\}", "", s)
     s = re.sub(r"<span class=\"pm\"></span>", "", s)
     s = re.sub(r"<[^>]+>", "", s)
     return re.sub(r"\s+", " ", H.unescape(s)).strip()
@@ -29,7 +30,7 @@ def faqs(content):
     return out
 
 def h1(content):
-    return text(re.search(r"<h1>(.*?)</h1>", content, re.S).group(1))
+    return text(re.search(r"<h1[^>]*>(.*?)</h1>", content, re.S).group(1))
 
 def seo(slug):
     url, key, label, title, meta, kw = PAGES[slug]
@@ -106,7 +107,7 @@ def sections(slug):
         body = re.sub(r"<(button|nav|svg|canvas)[^>]*>.*?</\1>", " ", body, flags=re.S)
         body = re.sub(r'<[^>]*aria-hidden="true"[^>]*>.*?</(div|span)>', " ", body, flags=re.S)
         if 'class="cta' in inner or 'data-cform' in inner: return open_tag + inner + "</section>"
-        secs.append({"id": sid, "title": title, "eyebrow": text(e.group(1)) if e else "", "body": text(re.sub(r"<", " <", body))})
+        secs.append({"id": sid, "title": title, "eyebrow": text(e.group(1)) if e else "", "body": text(re.sub(r"\{\{i:\w+\}\}", "", re.sub(r"<", " <", body)))})
         return open_tag + inner + "</section>"
     out = re.sub(r"(<section[^>]*>)(.*?)</section>", tag, src, flags=re.S)
     return out, secs

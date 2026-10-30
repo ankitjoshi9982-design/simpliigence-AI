@@ -159,31 +159,76 @@
   var PROCESS_RE = /\b(our|my|we|we're|we are)\b[^?.!]*\b(process|invoic\w*|billing|bills?|quot\w+|claims?|onboarding|payments?|reconcil\w*|orders?|tickets?|cases|tenders?|timesheets?|month-end|close|backlog|manual|spreadsheets?|hours)\b/i;
   var ASKS = [['name', 'Your name?'], ['email', 'Your work email?'], ['company', 'Your company?'], ['process', 'The process you’d like to fix?']];
 
+  /* ================= Assistant UI: full-screen chat, ChatGPT/Claude-style ================= */
+  var AV = '<span class="ai-av" aria-hidden="true"></span>';
+  var ICO = function (n) { return '<svg class="ico" aria-hidden="true"><use href="#i-' + n + '"/></svg>'; };
   function Assistant(root) {
-    this.root = root; this.log = $('[data-log]', root); this.form = $('[data-form]', root);
-    this.input = this.form && this.form.q; this.lead = null; this.started = false;
-    var self = this;
-    if (this.form) this.form.addEventListener('submit', function (e) { e.preventDefault(); var v = self.input.value.trim(); if (!v) return; self.input.value = ''; self.ask(v); });
-    var chipBox = $('[data-chips]', root);
-    if (chipBox && !chipBox.children.length) {
-      var key = d.body.getAttribute('data-sg-page') || 'home';
-      (CHIPS[key] || CHIPS.home).forEach(function (c) { var b = d.createElement('button'); b.type = 'button'; b.className = 'chip'; b.textContent = c; chipBox.appendChild(b); });
+    this.root = root; this.log = $('[data-log]', root); this.scroll = $('[data-scroll]', root) || this.log;
+    this.form = $('[data-form]', root); this.input = this.form && this.form.q; this.hello = $('[data-hello]', root);
+    this.lead = null; this.started = true; this.busy = false;
+    var self = this, key = d.body.getAttribute('data-sg-page') || 'home', chips = CHIPS[key] || CHIPS.home;
+    var starters = $('[data-starters]', root), railChips = $('[data-chips]', root);
+    var ICONS = ['spark', 'zap', 'bot', 'cpu', 'target', 'chat'];
+    chips.forEach(function (c, i) {
+      if (starters) starters.insertAdjacentHTML('beforeend', '<button class="starter" type="button">' + ICO(ICONS[i % ICONS.length]) + '<span>' + esc(c) + '</span></button>');
+      if (railChips) railChips.insertAdjacentHTML('beforeend', '<button class="ai-rail-q" type="button">' + ICO('chat') + '<span>' + esc(c) + '</span></button>');
+    });
+    root.addEventListener('click', function (e) {
+      var b = e.target.closest('.starter,.ai-rail-q,.ai-follow'); if (b) { self.ask(b.textContent.trim()); return; }
+      var c = e.target.closest('[data-copy]'); if (c) { var t = c.closest('.m').querySelector('.bd').innerText; try { navigator.clipboard.writeText(t); } catch (x) {} c.classList.add('ok'); return; }
+      var r = e.target.closest('[data-rate]'); if (r && !r.parentNode.classList.contains('rated')) { r.parentNode.classList.add('rated'); r.classList.add('on'); track('user', '[Rated answer: ' + (r.getAttribute('data-rate') === 'up' ? 'helpful' : 'not helpful') + ']', { matched: r.closest('.m').getAttribute('data-src') || '' }); }
+    });
+    if (this.form) {
+      this.form.addEventListener('submit', function (e) { e.preventDefault(); var v = self.input.value.trim(); if (!v || self.busy) return; self.input.value = ''; grow(self.input); self.ask(v); });
+      autoGrow(this.input, this.form);
     }
-    if (chipBox) chipBox.addEventListener('click', function (e) { var b = e.target.closest('.chip'); if (b) self.ask(b.textContent); });
-    if (root.hasAttribute('data-hero')) this.start();
   }
+  function grow(t) { if (!t) return; t.style.height = 'auto'; t.style.height = Math.min(t.scrollHeight, 180) + 'px'; }
+  function autoGrow(t, form) {
+    if (!t) return;
+    t.addEventListener('input', function () { grow(t); });
+    t.addEventListener('keydown', function (e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit', { cancelable: true })); } });
+  }
+  Assistant.prototype.toEnd = function () { var s = this.scroll; s.scrollTop = s.scrollHeight; };
   Assistant.prototype.add = function (html, who) {
-    var m = d.createElement('div'); m.className = 'msg ' + (who || 'bot'); m.innerHTML = html; this.log.appendChild(m);
-    this.log.scrollTop = this.log.scrollHeight; return m;
+    if (this.hello) this.hello.hidden = true;
+    var m = d.createElement('div'); m.className = 'm ' + (who === 'me' ? 'me' : 'bot');
+    m.innerHTML = who === 'me' ? '<div class="bd">' + html + '</div>' : AV + '<div class="bw"><div class="bd">' + html + '</div></div>';
+    this.log.appendChild(m); this.toEnd(); return m;
   };
+  /* Text streams in word by word; buttons, sources and follow-ups fade in after. */
   Assistant.prototype.say = function (html) {
-    var self = this, t = this.add('<span class="typing" aria-label="Typing"><i></i><i></i><i></i></span>');
-    var meta = this.meta || {}; this.meta = null;
-    var plain = html.replace(/<div class="(btn-row|rel)".*$/s, '').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
+    var self = this, meta = this.meta || {}; this.meta = null;
+    var cut = html.search(/<div class="(btn-row|rel|srcw)/); var text = cut < 0 ? html : html.slice(0, cut), extra = cut < 0 ? '' : html.slice(cut);
+    var plain = text.replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
     if (this.asked) track('bot', plain, meta);
-    return new Promise(function (res) { setTimeout(function () { t.innerHTML = html; self.log.scrollTop = self.log.scrollHeight; res(); }, reduce ? 0 : 650); });
+    var m = this.add('<span class="thinking"><i></i><i></i><i></i></span>'), bd = $('.bd', m);
+    if (meta.matched) m.setAttribute('data-src', meta.matched);
+    this.busy = true;
+    return new Promise(function (res) {
+      setTimeout(function () {
+        var words = text.split(/(\s+)/), i = 0;
+        bd.innerHTML = '<span class="st"></span><span class="caret"></span>';
+        var st = $('.st', bd);
+        (function tick() {
+          if (reduce) i = words.length; else i = Math.min(words.length, i + 3);
+          st.innerHTML = words.slice(0, i).join('');
+          self.toEnd();
+          if (i < words.length) return setTimeout(tick, 28);
+          bd.innerHTML = text;
+          var tools = (self.asked && meta.matched) ? '<div class="m-tools"><button type="button" data-copy aria-label="Copy">' + ICO('file') + '</button><button type="button" data-rate="up" aria-label="Helpful">' + ICO('check') + '</button><button type="button" data-rate="down" aria-label="Not helpful">' + ICO('x') + '</button></div>' : '';
+          if (extra || tools) { var x = d.createElement('div'); x.className = 'm-extra'; x.innerHTML = extra + tools; bd.parentNode.appendChild(x); }
+          self.busy = false; self.toEnd(); res();
+        })();
+      }, reduce ? 0 : 520);
+    });
   };
-  Assistant.prototype.start = function () { if (this.started) return; this.started = true; if (this.root.hasAttribute('data-hero') && !reduce) this.say(esc(STD.welcome)); else this.add(esc(STD.welcome)); };
+  Assistant.prototype.reset = function () {
+    $$('.m', this.log).forEach(function (m) { m.remove(); });
+    if (this.hello) this.hello.hidden = false;
+    this.lead = null; this.offered = false; this.leadOffered = false;
+  };
+  Assistant.prototype.start = function () {};
   Assistant.prototype.contactBtns = function () {
     return '<div class="btn-row"><a class="btn btn-primary btn-sm" href="' + contactUrl + '?type=Talk+to+an+Architect">Talk to an Architect</a><a class="btn btn-sm" href="' + contactUrl + '">Contact</a></div>';
   };
@@ -193,8 +238,7 @@
   };
   Assistant.prototype.leadStep = function (v) {
     var L = this.lead, self = this, k = ASKS[L.i][0];
-    /* A question or a "no" instead of a detail: leave the sign-up and carry on the conversation. */
-    if (/^\s*(no|nope|not now|no thanks|later|cancel|stop)\b/i.test(v)) { this.lead = null; return this.say(esc('What\u2019s taking up your team\u2019s time?')); }
+    if (/^\s*(no|nope|not now|no thanks|later|cancel|stop)\b/i.test(v)) { this.lead = null; return this.say(esc('What’s taking up your team’s time?')); }
     if (k !== 'process' && (/\?\s*$/.test(v) || /^\s*(how|what|why|when|where|who|which|can|could|do|does|did|is|are|will|would|should|tell|show|explain)\b/i.test(v) || PRICE_RE.test(v) || v.split(/\s+/).length > (k === 'company' ? 6 : 5))) { this.lead = null; this.retry = true; return this.ask(v); }
     if (k === 'email' && !/^\S+@\S+\.\S+$/.test(v)) return this.say(esc(ASKS[L.i][1]));
     L.data[k] = v; L.i++;
@@ -205,8 +249,10 @@
         : 'Please use the <a href="' + contactUrl + '">contact form</a> or email hello@simpliigence.ai.');
     });
   };
+  function label(t) { return esc(t.replace(/^.*? — /, '').replace(/\.$/, '')); }
+  function pageOf(t) { return esc((t.split(' — ')[0] || '').trim()); }
   Assistant.prototype.ask = function (v) {
-    var self = this; this.start();
+    var self = this;
     this.asked = true;
     if (!this.retry) { this.add(esc(v), 'me'); track('user', this.lead ? (ASKS[this.lead.i][0] === 'process' ? v : '[' + ASKS[this.lead.i][0] + ' shared for the Health Check]') : v); }
     this.retry = false;
@@ -221,11 +267,12 @@
     var hit = w.SG_CONTENT && w.SG_CONTENT.search(v);
     if (hit) {
       var rel = (w.SG_CONTENT.related ? w.SG_CONTENT.related(v) : []).map(function (r) {
-        return '<a class="chip" href="' + link(r.url) + '">' + esc(r.title.replace(/^.*? \u2014 /, '').replace(/\.$/, '')) + '</a>';
+        return '<a class="ai-rel" href="' + link(r.url) + '">' + ICO('arrow') + '<span><small>' + pageOf(r.title) + '</small>' + label(r.title) + '</span></a>';
       }).join('');
       this.meta = { matched: hit.title };
-      return this.say(esc(hit.excerpt) + '<div class="btn-row"><a class="btn btn-sm" href="' + link(hit.url) + '">Read more' + ARROW + '</a></div>' +
-        (rel ? '<div class="rel"><span>Related</span><div class="chips">' + rel + '</div></div>' : ''))
+      return this.say(esc(hit.excerpt) +
+        '<div class="srcw"><a class="src-card" href="' + link(hit.url) + '">' + ICO('book') + '<span><small>' + pageOf(hit.title) + '</small><b>' + label(hit.title) + '</b></span><em>Read more' + ARROW + '</em></a></div>' +
+        (rel ? '<div class="rel"><span>Related</span>' + rel + '</div>' : ''))
         .then(function () { if (!self.leadOffered && (INTENT_RE.test(v) || PROCESS_RE.test(v))) return self.startLead(); });
     }
     if (!this.leadOffered && (INTENT_RE.test(v) || PROCESS_RE.test(v))) return this.startLead();
@@ -234,20 +281,28 @@
     if (v.split(/\s+/).length > 2) { this.offered = true; return this.say(esc(STD.noAnswer) + this.contactBtns()); }
     return this.say(esc(STD.offTopic));
   };
-  var bots = $$('[data-asst]').map(function (r) { return new Assistant(r); });
 
-  /* drawer */
-  var drawer = $('#drawer'), fab = $('#fab');
-  var drawerBot = drawer && bots.filter(function (b) { return drawer.contains(b.root); })[0];
+  /* full-screen assistant */
+  var panel = $('#ai'), fab = $('#fab'), bot = panel ? new Assistant(panel) : null, lastFocus = null;
   function drawerSet(open) {
-    if (!drawer) return; drawer.classList.toggle('open', open); if (fab) fab.setAttribute('aria-expanded', open);
-    if (open) { drawerBot.start(); setTimeout(function () { drawerBot.input.focus({ preventScroll: true }); }, 200); }
+    if (!panel) return;
+    if (open) { lastFocus = d.activeElement; panel.hidden = false; requestAnimationFrame(function () { panel.classList.add('open'); }); d.documentElement.classList.add('ai-lock'); setTimeout(function () { if (w.innerWidth > 700) bot.input.focus({ preventScroll: true }); }, 250); }
+    else { panel.classList.remove('open'); d.documentElement.classList.remove('ai-lock'); setTimeout(function () { if (!panel.classList.contains('open')) panel.hidden = true; }, 300); if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true }); }
+    if (fab) fab.setAttribute('aria-expanded', open);
   }
-  if (fab) fab.addEventListener('click', function () { drawerSet(!drawer.classList.contains('open')); });
-  if ($('#drawerX')) $('#drawerX').addEventListener('click', function () { drawerSet(false); });
+  if (panel) {
+    $$('[data-close]', panel).forEach(function (b) { b.addEventListener('click', function () { drawerSet(false); }); });
+    $$('[data-new]', panel).forEach(function (b) { b.addEventListener('click', function () { bot.reset(); bot.input.focus(); }); });
+  }
+  if (fab) fab.addEventListener('click', function () { drawerSet(panel.hidden); });
   $$('[data-open-asst]').forEach(function (b) { b.addEventListener('click', function () { sheetSet(false); drawerSet(true); }); });
-  d.addEventListener('keydown', function (e) { if (e.key === 'Escape') { drawerSet(false); sheetSet(false); } });
-  /* open the assistant with a question already asked */
-  w.SG_ASK = function (text) { sheetSet(false); drawerSet(true); if (text) setTimeout(function () { drawerBot.ask(text); }, 250); };
+  d.addEventListener('keydown', function (e) { if (e.key === 'Escape') { if (panel && !panel.hidden) drawerSet(false); sheetSet(false); } });
+  w.SG_ASK = function (text) { sheetSet(false); drawerSet(true); if (text) setTimeout(function () { bot.ask(text); }, 280); };
   $$('[data-ask]').forEach(function (b) { b.addEventListener('click', function () { w.SG_ASK(b.getAttribute('data-ask')); }); });
+  /* Home: the hero composer hands the question to the full-screen assistant */
+  $$('[data-launch]').forEach(function (f) {
+    var t = f.q; autoGrow(t, f);
+    f.addEventListener('submit', function (e) { e.preventDefault(); var v = t.value.trim(); if (!v) { t.focus(); return; } t.value = ''; grow(t); w.SG_ASK(v); });
+  });
+  w.SG_BOT = bot;
 })();
