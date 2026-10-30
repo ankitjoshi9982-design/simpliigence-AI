@@ -55,7 +55,11 @@ add_filter( 'script_loader_tag', function ( $tag, $handle ) {
 add_action( 'wp_head', function () {
 	echo '<link rel="preload" href="' . esc_url( SGAI_URI . '/assets/fonts/inter-var-latin.woff2' ) . '" as="font" type="font/woff2" crossorigin>' . "\n";
 	echo '<meta name="theme-color" content="#010204">' . "\n";
-	echo '<link rel="icon" href="' . esc_url( SGAI_URI . '/assets/img/favicon.svg' ) . '" type="image/svg+xml">' . "\n";
+	if ( ! has_site_icon() ) {
+		echo '<link rel="icon" href="' . esc_url( SGAI_URI . '/assets/img/favicon.ico' ) . '" sizes="any">' . "\n";
+		echo '<link rel="icon" href="' . esc_url( SGAI_URI . '/assets/img/favicon-32.png' ) . '" type="image/png" sizes="32x32">' . "\n";
+		echo '<link rel="apple-touch-icon" href="' . esc_url( SGAI_URI . '/assets/img/apple-touch-icon.png' ) . '">' . "\n";
+	}
 }, 1 );
 
 /* Tidy the head. */
