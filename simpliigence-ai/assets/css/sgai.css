@@ -1079,3 +1079,6 @@ html.ai-lock,html.ai-lock body{overflow:hidden}
   .fab{z-index:150}
 }
 @media (max-width:640px){.composer textarea{min-height:52px;font-size:16px;line-height:1.4;padding:6px 0}.composer{align-items:center}.cp-orb{margin-bottom:0}}
+.ai-hero h1.one-line{white-space:nowrap;font-size:clamp(34px,8.2vw,124px)}
+@media (max-width:640px){.ai-hero h1.one-line{font-size:9.6vw;letter-spacing:-.055em}}
+.leader p:last-child{font-size:15.5px;line-height:1.6}
