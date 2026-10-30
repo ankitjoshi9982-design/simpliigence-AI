@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Fallback sitemap, for use ONLY until Yoast SEO is installed and activated.
+  Yoast generates and maintains its own XML sitemap automatically at
+  /sitemap_index.xml the moment it's active — that one should be submitted
+  to Google Search Console; this file is a stopgap, not a long-term sitemap.
+  Replace https://simpliigence.ai with the real domain before uploading.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://simpliigence.ai/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://simpliigence.ai/ai/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://simpliigence.ai/automation/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://simpliigence.ai/agents/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://simpliigence.ai/industries/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://simpliigence.ai/resources/</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://simpliigence.ai/tools/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://simpliigence.ai/company/</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://simpliigence.ai/contact/</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+</urlset>

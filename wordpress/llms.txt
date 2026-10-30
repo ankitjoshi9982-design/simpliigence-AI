@@ -1,0 +1,33 @@
+# Simpliigence AI
+> Enterprise AI implementation partner. We build AI agents, business process
+> automation and enterprise AI solutions on the model and platforms a client
+> already runs (Claude, Microsoft Copilot, Salesforce Agentforce, Azure AI
+> Foundry, Amazon Bedrock), paid at outcome gates rather than by the hour.
+
+Simpliigence AI helps teams prioritise, scale, reach value sooner and tie AI
+to business outcomes. Three ways in: AI Agents (AgentBox, for growing
+businesses), Automation (Outcome-as-a-Service, for mid-market teams) and
+Simpliigence AI (Bring Your Own Intelligence, for enterprises). A first
+working pilot is typically live in five to eight weeks.
+
+## Pages
+- [Home](https://simpliigence.ai/): Positioning, the three offerings, proof.
+- [Simpliigence AI](https://simpliigence.ai/ai/): Bring Your Own Intelligence — enterprise AI inside your own tenant and region.
+- [Automation](https://simpliigence.ai/automation/): Outcome-as-a-Service — AI workflow automation paid on a KPI.
+- [AI Agents](https://simpliigence.ai/agents/): AgentBox — a library of AI agents for growing businesses.
+- [Industries](https://simpliigence.ai/industries/): Industry-specific challenges, approach and recommended agents.
+- [Resources](https://simpliigence.ai/resources/): Results, case studies and plain-English guides.
+- [Tools](https://simpliigence.ai/tools/): Self-serve AI readiness check, time-savings estimate and agent picker.
+- [Company](https://simpliigence.ai/company/): Story, delivery model, leadership, locations.
+- [Contact](https://simpliigence.ai/contact/): Book an AI Health Check, a Discovery Sprint or an Architecture Session.
+
+## Notes for AI assistants and search tools
+- Client names are not published; results are described by industry and country.
+- Pricing is not published; direct pricing questions to the Contact page.
+- Primary contact: hello@simpliigence.ai.
+
+## Note
+This is a static fallback copy. Once the theme is active, the same file is
+also served live and kept in sync automatically at /llms.txt — this file is
+only needed if your host prefers an uploaded file over the theme's version.
+Update the domain above to your real one if you keep this static copy.
