@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agents for Business, Set Up and Run for You | AgentBox by Simpliigence AI</title>
+<meta name="description" content="AI-powered business automation for small and mid-sized teams. Pick agents from a library of 36 across finance, sales, service, HR, ops and marketing. We configure, personalise and run them.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/simpliigence-AI/theme/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+<link rel="stylesheet" href="/simpliigence-AI/theme/style.css">
+<script>window.SGAI={ajaxUrl:"/simpliigence-AI/__preview-no-backend__",nonce:"",contactUrl:"/simpliigence-AI/contact/",privacyUrl:"/simpliigence-AI/contact/",root:"/simpliigence-AI"};</script>
+<script defer src="/simpliigence-AI/theme/js/sg-content.js"></script>
+<script defer src="/simpliigence-AI/theme/js/sg-main.js"></script>
+<script defer src="/simpliigence-AI/theme/js/sg-assistant.js"></script>
+<script defer src="/simpliigence-AI/theme/js/sg-tools.js"></script>
+</head>
+<body class="page page-agents" data-sg-page="agents">
+<div class="ambient" aria-hidden="true">
+  <div class="orb" style="width:520px;height:520px;top:-160px;left:-120px;background:rgba(42,99,196,.26)"></div>
+  <div class="orb" style="width:420px;height:420px;top:10%;right:-140px;background:rgba(115,161,226,.14);animation-delay:-6s"></div>
+  <div class="orb" style="width:480px;height:480px;bottom:-180px;left:35%;background:rgba(31,74,144,.22);animation-delay:-12s"></div>
+</div>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="/simpliigence-AI/" class="logo" aria-label="Simpliigence AI home">
+      <img src="/simpliigence-AI/theme/images/logo.png" alt="Simpliigence" class="logo-img" width="32" height="32">
+      <span class="ai-tag">AI</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a class="nav-link " href="/simpliigence-AI/">Home</a></li>
+        <li>
+          <a class="nav-link" href="/simpliigence-AI/ai/">Platform <i class="fa-solid fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="/simpliigence-AI/ai/"><span class="dd-icon"><i class="fa-solid fa-brain"></i></span><span><strong>Simpliigence AI</strong><span>Bring Your Own Intelligence — enterprise AI inside your own tenant.</span></span></a>
+            <a href="/simpliigence-AI/automation/"><span class="dd-icon"><i class="fa-solid fa-arrows-turn-to-dots"></i></span><span><strong>Simpliigence Automation</strong><span>Outcome-as-a-Service — pay when the number moves.</span></span></a>
+            <a href="/simpliigence-AI/agents/"><span class="dd-icon"><i class="fa-solid fa-robot"></i></span><span><strong>AI Agents</strong><span>AgentBox — your own AI team, without hiring one.</span></span></a>
+          </div>
+        </li>
+        <li><a class="nav-link " href="/simpliigence-AI/industries/">Industries</a></li>
+        <li><a class="nav-link " href="/simpliigence-AI/resources/">Resources</a></li>
+        <li><a class="nav-link " href="/simpliigence-AI/tools/">Tools</a></li>
+        <li>
+          <a class="nav-link " href="/simpliigence-AI/company/">Company <i class="fa-solid fa-chevron-down"></i></a>
+          <div class="dropdown narrow">
+            <a href="/simpliigence-AI/company/"><span class="dd-icon"><i class="fa-solid fa-users"></i></span><span><strong>About Us</strong><span>Story, delivery model, leadership</span></span></a>
+            <a href="/simpliigence-AI/contact/"><span class="dd-icon"><i class="fa-solid fa-envelope"></i></span><span><strong>Contact</strong><span>Talk to our team</span></span></a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="/simpliigence-AI/company/?type=Talk+to+an+Architect" class="btn btn-ghost btn-sm"><i class="fa-solid fa-headset"></i> Talk to an Architect</a>
+      <a href="/simpliigence-AI/contact/?type=Book+an+AI+Health+Check" class="btn btn-primary btn-sm"><i class="fa-solid fa-calendar-check"></i> Book an AI Health Check</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  <a href="/simpliigence-AI/">Home</a>
+  <a href="/simpliigence-AI/ai/">Simpliigence AI</a>
+  <a href="/simpliigence-AI/automation/">Simpliigence Automation</a>
+  <a href="/simpliigence-AI/agents/">AI Agents</a>
+  <a href="/simpliigence-AI/industries/">Industries</a>
+  <a href="/simpliigence-AI/resources/">Resources</a>
+  <a href="/simpliigence-AI/tools/">Tools</a>
+  <a href="/simpliigence-AI/company/">Company</a>
+  <a href="/simpliigence-AI/contact/">Contact</a>
+  <div style="margin-top:24px;display:flex;flex-direction:column;gap:12px">
+    <a href="/simpliigence-AI/contact/?type=Book+an+AI+Health+Check" class="btn btn-primary">Book an AI Health Check</a>
+    <a href="/simpliigence-AI/contact/?type=Talk+to+an+Architect" class="btn btn-ghost">Talk to an Architect</a>
+  </div>
+</nav>
+
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/simpliigence-AI/">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>AI Agents</span></nav>
+    <span class="eyebrow">AI Agents &middot; AgentBox</span>
+    <h1>Your own AI team, <span class="grad-text">without hiring one.</span></h1>
+    <p>Pick agents from a library of 36. We set them up in the tools you already use, run them, and tune them every month. One flat fee.</p>
+    <div class="btn-row" style="margin-top:20px">
+      <a href="#library" class="btn btn-primary">Browse the library</a>
+      <a href="/simpliigence-AI/contact/?type=Explore+AI+Agents" class="btn btn-ghost">Ask which agents fit</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <p class="section-sub" style="max-width:900px">An AI agent does more than answer a question. It plans the steps, acts inside your systems and hands off to a person when it should. AgentBox gives growing teams ready-built agents for the work that eats the week: chasing invoices, qualifying leads, answering service requests, onboarding new hires. You choose. We configure, connect and run.</p>
+  </div>
+</section>
+
+<section class="section" id="sound-familiar">
+  <div class="container">
+    <span class="eyebrow">Sound familiar?</span>
+    <h2 class="section-title display">Too busy running the business to work out AI.</h2>
+    <div class="grid-2 mt-24 reveal">
+      <div class="card"><h3>Everyone wears three hats</h3><p>Admin piles up in the gaps between the real work.</p></div>
+      <div class="card"><h3>No one to set it up</h3><p>There&rsquo;s no IT team, and certainly no AI team.</p></div>
+      <div class="card"><h3>Leads and invoices slip</h3><p>Follow-ups happen when someone remembers.</p></div>
+      <div class="card"><h3>The same questions, all day</h3><p>Customers and staff ask things that already have an answer somewhere.</p></div>
+      <div class="card"><h3>Too many AI tools, no time to try them</h3><p>You know it could help. You don&rsquo;t know where to start.</p></div>
+    </div>
+    <p class="section-sub mt-24">AgentBox is built for exactly this. You tell us what&rsquo;s eating your week, and we set up and run the agents that take it off your plate.</p>
+  </div>
+</section>
+
+<section class="section" id="how-it-works">
+  <div class="container">
+    <h2 class="section-title display">Four steps, and three of them are ours.</h2>
+    <div class="grid-2 mt-24 reveal">
+      <div class="card"><div class="card-icon mono">1</div><span class="eyebrow">Browse the library</span><p>36 agents across operations, finance, sales, service, HR and marketing, plus industry packs.</p></div>
+      <div class="card"><div class="card-icon mono">2</div><span class="eyebrow">Pick your agents</span><p>Three, five or ten. Choose yourself, or take our recommendation after a short diagnostic.</p></div>
+      <div class="card"><div class="card-icon mono">3</div><span class="eyebrow">We set them up</span><p>Configured, integrated and tailored to your data, inside the tools you already use.</p></div>
+      <div class="card"><div class="card-icon mono">4</div><span class="eyebrow">You run. We support</span><p>Monthly tuning, a value report and one agent swap a quarter, all in the fee.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="library">
+  <div class="container">
+    <h2 class="section-title display">Agents for the work that piles up.</h2>
+    <div class="grid-3 mt-24 reveal">
+      <div class="card"><h3>Customer support</h3><p>Case triage, first replies, claims and billing handoffs.</p></div>
+      <div class="card"><h3>Sales</h3><p>Lead qualification, quote drafting, CRM updates, meeting follow-up.</p></div>
+      <div class="card"><h3>Finance</h3><p>Invoice follow-up, payment matching, expense checks, month-end prep.</p></div>
+      <div class="card"><h3>Operations</h3><p>Order tracking, procurement capture, scheduling.</p></div>
+      <div class="card"><h3>HR</h3><p>Onboarding checklists, policy questions, document collection.</p></div>
+      <div class="card"><h3>Marketing</h3><p>Content drafts, campaign reporting, ad performance summaries.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="plans">
+  <div class="container">
+    <h2 class="section-title display">Start with three. Grow to ten.</h2>
+    <div class="grid-3 mt-24 reveal">
+      <div class="card"><h3>Starter &middot; 3 agents</h3><p>Standard setup and integrations, plus a monthly usage report.</p></div>
+      <div class="card"><h3>Growth &middot; 5 agents</h3><p>Priority setup in 10 days, personalisation, and alerts in Slack or Teams.</p></div>
+      <div class="card"><h3>Scale &middot; 10 agents</h3><p>White-glove onboarding, a dedicated project manager, a weekly review and every connector.</p></div>
+    </div>
+    <a href="/simpliigence-AI/contact/?type=Explore+AI+Agents" class="btn btn-ghost mt-24">Talk to us about pricing</a>
+  </div>
+</section>
+
+<section class="section" id="trust">
+  <div class="container">
+    <h2 class="section-title display">Simple to buy. Serious underneath.</h2>
+    <p class="section-sub">Every agent comes from a tested template, so you get something proven, not an experiment. A person approves before an agent acts on anything that matters. Every action is logged, and a kill switch takes you straight back to how you worked before.</p>
+    <div class="grid-3 mt-16 reveal">
+      <div class="card"><div class="card-icon mono">1</div><p style="margin:0">Agent proposes</p></div>
+      <div class="card"><div class="card-icon mono">2</div><p style="margin:0">Person approves</p></div>
+      <div class="card"><div class="card-icon mono">3</div><p style="margin:0">Auto-apply, once earned</p></div>
+    </div>
+    <p class="section-sub mt-16">Need something the library doesn&rsquo;t cover? We build custom AI solutions for businesses on the same foundation.</p>
+  </div>
+</section>
+
+<section class="section" id="proof">
+  <div class="container">
+    <h2 class="section-title display">Proof</h2>
+    <div class="grid-2 mt-24 reveal">
+      <div class="card"><span class="eyebrow">Field services &middot; US</span><p>A contractor went from 17 to 35 manual claims a day to zero, with no extra headcount.</p></div>
+      <div class="card"><span class="eyebrow">Home services &middot; US</span><p>A finance concierge agent now feeds a live CFO dashboard from ads, CRM and billing data.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <h2 class="section-title display">Frequently asked questions</h2>
+    <div class="accordion-list" id="faqList">
+      <div class="accordion-item"><button class="accordion-head" aria-expanded="false">What is an AI agent? <i class="fa-solid fa-chevron-down"></i></button><div class="accordion-body"><div class="accordion-body-inner">An AI agent is software that completes a multi-step task on its own using your tools and data, rather than just replying to a prompt.</div></div></div>
+      <div class="accordion-item"><button class="accordion-head" aria-expanded="false">Do I need an IT team? <i class="fa-solid fa-chevron-down"></i></button><div class="accordion-body"><div class="accordion-body-inner">No. We handle setup, integrations and running the agents.</div></div></div>
+      <div class="accordion-item"><button class="accordion-head" aria-expanded="false">Which tools do the agents work with? <i class="fa-solid fa-chevron-down"></i></button><div class="accordion-body"><div class="accordion-body-inner">The ones you already use, including Salesforce, QuickBooks, Microsoft 365, Google Workspace, Slack and Teams.</div></div></div>
+      <div class="accordion-item"><button class="accordion-head" aria-expanded="false">Can I change agents later? <i class="fa-solid fa-chevron-down"></i></button><div class="accordion-body"><div class="accordion-body-inner">Yes. One swap a quarter is included, and you can move up a plan any time.</div></div></div>
+      <div class="accordion-item"><button class="accordion-head" aria-expanded="false">How is AI used for customer support automation? <i class="fa-solid fa-chevron-down"></i></button><div class="accordion-body"><div class="accordion-body-inner">A support agent reads each new case, sorts it, drafts the first reply and routes anything unusual to a person, so your team spends time on the cases that need them.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="container text-center">
+    <h2 class="section-title display">Not sure which agents to pick?</h2>
+    <p class="section-sub" style="margin:0 auto">A short diagnostic tells you which three would save your team the most time.</p>
+    <a href="/simpliigence-AI/contact/?type=Explore+AI+Agents" class="btn btn-primary mt-24">Get my recommendation</a>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/simpliigence-AI/" class="logo"><img src="/simpliigence-AI/theme/images/logo.png" alt="Simpliigence" class="logo-img" width="28" height="28"> <span class="ai-tag">AI</span></a>
+        <p>Enterprise AI solutions, AI agents and business process automation — paid at the gates they pass, run on the platforms you already license.</p>
+      </div>
+      <div>
+        <h4>Ways in</h4>
+        <ul>
+          <li><a href="/simpliigence-AI/ai/">Simpliigence AI</a></li>
+          <li><a href="/simpliigence-AI/automation/">Simpliigence Automation</a></li>
+          <li><a href="/simpliigence-AI/agents/">AI Agents</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/simpliigence-AI/industries/">Industries</a></li>
+          <li><a href="/simpliigence-AI/resources/">Resources</a></li>
+          <li><a href="/simpliigence-AI/tools/">Tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/simpliigence-AI/company/">About</a></li>
+          <li><a href="/simpliigence-AI/contact/">Contact</a></li>
+          <li><a href="/simpliigence-AI/contact/?type=Book+an+AI+Health+Check">Book an AI Health Check</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Simpliigence AI &middot; simpliigence.ai &middot; All rights reserved.</span>
+      <span>Simpliigence AI &middot; Simpliigence Automation &middot; AI Agents</span>
+    </div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status"><i class="fa-solid fa-circle-check"></i><span id="toastMsg"></span></div>
+
+
+</body>
+</html>
