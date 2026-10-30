@@ -7,7 +7,7 @@ from sitecfg import PAGES, DOMAIN, ORG
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "preview")
-ORG["description"] = ("Next-generation AI platform for the future of business automation. "
+ORG["description"] = ("Next-generation AI platform and modern automation platform for the future of business automation. "
                       + PAGES["home"][4])
 
 def render_icons(s):
@@ -68,7 +68,7 @@ def head_tags(s, base):
     return (f'<title>{t}</title><meta name="description" content="{m}"><link rel="canonical" href="{full}">'
             f'<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">'
             f'<meta property="og:type" content="website"><meta property="og:site_name" content="Simpliigence AI"><meta property="og:title" content="{t}">'
-            f'<meta property="og:description" content="{m}"><meta property="og:url" content="{full}"><meta property="og:image" content="{DOMAIN}/wp-content/themes/simpliigence-ai/assets/img/og.png">'
+            f'<meta property="og:description" content="{m}"><meta property="og:url" content="{full}"><meta property="og:image" content="{DOMAIN}/wp-content/themes/simpliigence-ai/assets/img/og.png"><meta property="og:image:alt" content="Simpliigence AI, a next-generation AI platform and modern automation platform for the future of business automation">'
             f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{t}"><meta name="twitter:description" content="{m}">'
             f'<link rel="icon" href="{base}assets/img/favicon.svg" type="image/svg+xml">'
             f'<script type="application/ld+json">{json.dumps({"@context": "https://schema.org", "@graph": s["graph"]}, ensure_ascii=False)}</script>')

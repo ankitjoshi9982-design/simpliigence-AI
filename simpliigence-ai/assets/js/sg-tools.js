@@ -27,7 +27,7 @@
 
   /* ---------- Tool 1: AI Readiness Check ---------- */
   var Q = [
-    { q: 'Which systems does your team run on day to day?', o: ['Salesforce', 'Microsoft 365', 'SAP or another ERP', 'A mix of spreadsheets and email'] },
+    { q: 'Which systems does your team run on day to day?', o: ['Salesforce', 'Microsoft 365', 'SAP', 'Other'] },
     { q: 'Where does most of your process data live?', o: ['One main system of record', 'A few connected systems', 'Scattered across several tools', 'Mostly in people’s heads'] },
     { q: 'How big is the team that would use this?', o: ['Under 10', '10 to 50', '50 to 200', '200+'] },
     { q: 'Which process takes up the most time right now?', o: ['Billing or invoicing', 'Customer or case handling', 'Quoting or sales admin', 'Onboarding or HR admin'] },

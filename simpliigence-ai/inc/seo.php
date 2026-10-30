@@ -43,7 +43,7 @@ add_action( 'wp_head', function () {
 		$t = esc_attr( $s['title'] ); $d = esc_attr( $s['meta'] ); $img = esc_url( SGAI_URI . '/assets/img/og.png' );
 		echo "<meta name=\"description\" content=\"{$d}\">\n";
 		echo "<meta name=\"robots\" content=\"index,follow,max-image-preview:large,max-snippet:-1\">\n";
-		echo "<meta property=\"og:type\" content=\"website\"><meta property=\"og:site_name\" content=\"Simpliigence AI\"><meta property=\"og:title\" content=\"{$t}\"><meta property=\"og:description\" content=\"{$d}\"><meta property=\"og:url\" content=\"{$url}\"><meta property=\"og:image\" content=\"{$img}\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">\n";
+		echo "<meta property=\"og:type\" content=\"website\"><meta property=\"og:site_name\" content=\"Simpliigence AI\"><meta property=\"og:title\" content=\"{$t}\"><meta property=\"og:description\" content=\"{$d}\"><meta property=\"og:url\" content=\"{$url}\"><meta property=\"og:image\" content=\"{$img}\"><meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\"><meta property=\"og:image:alt\" content=\"Simpliigence AI, a next-generation AI platform and modern automation platform for the future of business automation\">\n";
 		echo "<meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:title\" content=\"{$t}\"><meta name=\"twitter:description\" content=\"{$d}\"><meta name=\"twitter:image\" content=\"{$img}\">\n";
 	}
 	echo '<script type="application/ld+json">' . wp_json_encode( array( '@context' => 'https://schema.org', '@graph' => $graph ), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) . "</script>\n";

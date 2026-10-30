@@ -71,7 +71,7 @@ def footer(base):
 <button class="ai-new" type="button" data-new>{ico("spark")}New chat</button>
 <div class="ai-rail-chips" data-chips></div>
 <div class="ai-rail-foot"><a class="btn btn-primary btn-sm" href="{u('/contact/?type=Book+an+AI+Health+Check')}">Book an AI Health Check</a><a class="btn btn-sm" href="{u('/contact/?type=Talk+to+an+Architect')}">Talk to an Architect</a>
-<p class="asst-priv">Chats are stored to improve our answers. See our <a href="{u('/privacy/')}">privacy notice</a>.</p></div>
+</div>
 </aside>
 <section class="ai-main">
 <header class="ai-top"><span class="ai-av" aria-hidden="true"></span><div><b>Simpliigence AI assistant</b><span>Answers from our own content. A person is one click away.</span></div>
