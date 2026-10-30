@@ -16,3 +16,13 @@ To rebuild the theme zip after editing the source:
 ```bash
 zip -r wordpress/simpliigence-ai-theme.zip simpliigence-ai
 ```
+
+## Preview
+
+A static preview of the 9 pages is hosted on GitHub Pages at
+https://ankitjoshi9982-design.github.io/simpliigence-AI/ (built from the `gh-pages` branch).
+Forms and the assistant can't save leads there, since that needs WordPress. To rebuild it:
+
+```bash
+python3 scripts/build_preview.py . _site /simpliigence-AI
+```
