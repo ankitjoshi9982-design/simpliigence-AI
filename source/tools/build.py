@@ -7,6 +7,7 @@ from sitecfg import PAGES, DOMAIN, ORG
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "preview")
+BOOT = re.sub(r"/\*.*?\*/", "", open(os.path.join(ROOT, "assets", "js", "sg-theme-boot.js")).read(), flags=re.S).strip()
 ORG["description"] = ("Next-generation AI platform and modern automation platform for the future of business automation. "
                       + PAGES["home"][4])
 
@@ -124,9 +125,9 @@ def build(slug, S):
         rel = base + (p.strip("/") + "/index.html" if p.strip("/") else "index.html")
         return f'{m.group(1)}="{rel}{q}{frag}"'
     page = f'''<!doctype html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-{head_tags(S, base)}<meta name="theme-color" content="#010204">
+<script>{BOOT}</script>{head_tags(S, base)}<meta name="theme-color" content="#010204">
 <link rel="preload" href="{base}assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{base}assets/css/sgai.css"></head><body data-sg-page="{key}">
+<link rel="stylesheet" href="{base}assets/css/sgai.css"><link rel="stylesheet" href="{base}assets/css/sgai-light.css"></head><body data-sg-page="{key}">
 {header(url, "")}{body}{footer("")}
 <script>window.SGAI={{staticBase:"{base}",contactUrl:"{base}contact/index.html"}};</script><script src="{base}assets/js/sg-kb.js" defer></script><script src="{base}assets/js/sg-content.js" defer></script><script src="{base}assets/js/sgai.js" defer></script><script src="{base}assets/js/sg-tools.js" defer></script><script src="{base}assets/js/sg-fx.js" defer></script></body></html>'''
     page = re.sub(r'(href)="(/[^"]*)"', fix, page)

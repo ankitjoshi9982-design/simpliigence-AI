@@ -43,6 +43,7 @@ def header(page, base):
 <a class="brand" href="{u('/')}" aria-label="Simpliigence AI home"><img src="{base}assets/img/logo-white.png" alt="Simpliigence" width="160" height="30"><span class="ai">AI</span></a>
 <nav aria-label="Main"><ul class="nav">{''.join(items)}</ul></nav>
 <div class="hdr-cta"><a class="btn btn-sm btn-human" href="{ta}" aria-label="Speak to a Human Architect">{ico("user")}<span>Speak to a Human Architect</span></a><a class="btn btn-primary btn-sm" href="{hc}">Book an AI Health Check</a>
+<button class="theme-t" type="button" data-theme-toggle aria-label="Colour theme: automatic by time of day" title="Colour theme: automatic by time of day">{ico("clock","ico t-auto")}{ico("sun","ico t-light")}{ico("moon","ico t-dark")}</button>
 <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">{ico("menu")}</button></div>
 </div></header>
 <div class="sheet" id="sheet" aria-hidden="true"><div class="sheet-top"><a class="brand" href="{u('/')}"><img src="{base}assets/img/logo-white.png" alt="Simpliigence" width="160" height="30"><span class="ai">AI</span></a><button class="burger" style="display:grid" id="sheetX" aria-label="Close menu">{ico("x")}</button></div>

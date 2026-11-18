@@ -1254,6 +1254,25 @@ html.ai-lock,html.ai-lock body{overflow:hidden}
 h2 .ph,h3 .ph{font-size:.6em}
 .eco-chip.ph{min-width:72px;text-align:center}
 
+/* ---------- time-of-day theme ---------- */
+:root{--net:115,161,226}
+.theme-t{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--line2);color:var(--text);flex:none;transition:background .25s,border-color .25s}
+.theme-t:hover{border-color:var(--line3);background:rgba(115,161,226,.1)}
+.theme-t .ico{width:19px;height:19px;display:none}
+html[data-pref="auto"] .theme-t .t-auto,html:not([data-pref]) .theme-t .t-auto,html[data-pref="light"] .theme-t .t-light,html[data-pref="dark"] .theme-t .t-dark{display:block}
+html.theme-fade,html.theme-fade *,html.theme-fade *::before,html.theme-fade *::after{transition:background-color 1s ease,color 1s ease,border-color 1s ease,fill 1s ease,stroke 1s ease,box-shadow 1s ease!important}
+/* Evening: dusk navy (brand navy shades), light text */
+html[data-phase="evening"]{--ink0:#102548;--ink1:#153262;--ink2:#163465;--ink3:#1D4589;--ink4:#1F4A90;--text:#F4F6F9;--text2:#C7D9F3;--text3:#9DBDEB;--line:rgba(157,189,235,.16);--line2:rgba(157,189,235,.28);--line3:rgba(157,189,235,.5);--glass:linear-gradient(170deg,rgba(31,74,144,.55),rgba(16,37,72,.7))}
+html[data-phase="evening"] .ambient{background:radial-gradient(900px 620px at 85% -10%,rgba(115,161,226,.35),transparent 60%),radial-gradient(700px 520px at -10% 40%,rgba(42,99,196,.3),transparent 60%),radial-gradient(800px 600px at 50% 120%,rgba(31,74,144,.45),transparent 60%),var(--ink0)}
+html[data-phase="evening"] .hdr.scrolled{background:rgba(16,37,72,.85)}
+html[data-phase="evening"] body{background:var(--ink0)}
+html[data-phase="evening"] .aix{background:var(--ink0)}
+html[data-phase="evening"] .ai-main{background:radial-gradient(900px 500px at 50% -10%,rgba(115,161,226,.25),transparent 60%),var(--ink0)}
+/* Night: darkest, with faint stars */
+html[data-phase="night"] .ambient::before{content:"";position:absolute;inset:0;background-image:radial-gradient(1.2px 1.2px at 8% 14%,rgba(234,239,249,.8),transparent),radial-gradient(1px 1px at 22% 62%,rgba(234,239,249,.55),transparent),radial-gradient(1.4px 1.4px at 37% 28%,rgba(234,239,249,.7),transparent),radial-gradient(1px 1px at 51% 78%,rgba(234,239,249,.5),transparent),radial-gradient(1.2px 1.2px at 64% 9%,rgba(234,239,249,.75),transparent),radial-gradient(1px 1px at 76% 46%,rgba(234,239,249,.55),transparent),radial-gradient(1.4px 1.4px at 88% 22%,rgba(234,239,249,.7),transparent),radial-gradient(1px 1px at 94% 70%,rgba(234,239,249,.5),transparent),radial-gradient(1px 1px at 30% 90%,rgba(234,239,249,.45),transparent),radial-gradient(1.2px 1.2px at 70% 92%,rgba(234,239,249,.55),transparent);animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.45}to{opacity:1}}
+@media (max-width:640px){.theme-t{width:40px;height:40px}}
+
 /* ---------- v3 responsive ---------- */
 @media (max-width:1100px){.eco-cl{width:min(280px,34%)}.eco-chip{font-size:13px;padding:6px 10px}}
 @media (max-width:900px){

@@ -32,6 +32,7 @@ add_action( 'elementor/theme/register_locations', function ( $m ) { $m->register
 
 add_action( 'wp_enqueue_scripts', function () {
 	wp_enqueue_style( 'sgai', SGAI_URI . '/assets/css/sgai.css', array(), SGAI_VER );
+	wp_enqueue_style( 'sgai-light', SGAI_URI . '/assets/css/sgai-light.css', array( 'sgai' ), SGAI_VER );
 	wp_enqueue_script( 'sgai-content', SGAI_URI . '/assets/js/sg-content.js', array(), SGAI_VER, true );
 	wp_enqueue_script( 'sgai', SGAI_URI . '/assets/js/sgai.js', array( 'sgai-content' ), SGAI_VER, true );
 	wp_enqueue_script( 'sgai-tools', SGAI_URI . '/assets/js/sg-tools.js', array( 'sgai' ), SGAI_VER, true );
@@ -52,6 +53,11 @@ add_filter( 'script_loader_tag', function ( $tag, $handle ) {
 	if ( in_array( $handle, array( 'sgai-content', 'sgai', 'sgai-tools' ), true ) ) $tag = str_replace( ' src=', ' defer src=', $tag );
 	return $tag;
 }, 10, 2 );
+
+// Time-of-day theme: set before the stylesheets paint, so there is no flash of the wrong colours.
+add_action( 'wp_head', function () {
+	echo '<script>' . file_get_contents( SGAI_DIR . '/assets/js/sg-theme-boot.js' ) . '</script>' . "\n"; // phpcs:ignore -- theme's own file
+}, 0 );
 
 add_action( 'wp_head', function () {
 	echo '<link rel="preload" href="' . esc_url( SGAI_URI . '/assets/fonts/inter-var-latin.woff2' ) . '" as="font" type="font/woff2" crossorigin>' . "\n";

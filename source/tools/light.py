@@ -1,20 +1,20 @@
 """Generate assets/css/sgai-light.css: the light (daytime) theme, derived from sgai.css.
 
 Every rule in sgai.css that hard-codes a dark-theme colour gets a light counterpart scoped to
-html[data-theme="light"]. Only Simpliigence brand colours are used. Re-run after editing sgai.css.
+html[data-mode="light"] (morning and daytime). Only Simpliigence brand colours are used. Re-run after editing sgai.css.
 """
 import os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "assets", "css", "sgai.css")
 OUT = os.path.join(ROOT, "assets", "css", "sgai-light.css")
-L = 'html[data-theme="light"]'
+L = 'html[data-mode="light"]'
 
 TOKENS = """%s{
   color-scheme:light;
   --ink0:#F4F6F9;--ink1:#FFFFFF;--ink2:#F1F6FC;--ink3:#EAEFF9;--ink4:#E9EDF4;
   --text:#102548;--text2:#3A5171;--text3:#51719E;
-  --sky:#2A63C4;
+  --sky:#2A63C4;--net:42,99,196;
   --line:rgba(31,74,144,.12);--line2:rgba(31,74,144,.2);--line3:rgba(42,99,196,.45);
   --glass:linear-gradient(170deg,#FFFFFF,#F1F6FC);
 }
@@ -30,7 +30,7 @@ ON_BLUE = re.compile(r"background[^;]*(var\(--blue\)|var\(--deep\)|#2A63C4|#1F4A
 
 def rgba(m, prop):
     r, g, b, a = int(m.group(1)), int(m.group(2)), int(m.group(3)), float(m.group(4))
-    if (r, g, b) in DARK:
+    if (r, g, b) in DARK or max(r, g, b) < 64:
         if "shadow" in prop:
             return "rgba(16,37,72,%.2f)" % min(a * .3, .22)
         if prop in SURFACE or prop.startswith("background"):
@@ -56,9 +56,14 @@ def convert(prop, val, on_blue):
     else:
         out = re.sub(r"rgba\((\d+),\s*(\d+),\s*(\d+),\s*([.\d]+)\)",
                      lambda m: rgba(m, prop) if "shadow" in prop and tuple(map(int, m.groups()[:3])) in DARK else m.group(0), out)
-    for h in DARK_HEX:
-        if prop.startswith("background") or prop in ("color", "fill", "stroke") or prop.startswith("border"):
-            out = re.sub(re.escape(h) + r"\b", "var(--ink1)" if prop.startswith("background") else "var(--text)", out, flags=re.I)
+    if prop.startswith("background") or prop in ("color", "fill", "stroke") or prop.startswith("border"):
+        def hexdark(m):
+            h = m.group(1)
+            if len(h) == 3: h = "".join(c * 2 for c in h)
+            r, g, b = int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+            if max(r, g, b) >= 64: return m.group(0)
+            return "var(--ink1)" if prop.startswith("background") else "var(--text)"
+        out = re.sub(r"#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})\b", hexdark, out)
     return out
 
 
@@ -116,6 +121,8 @@ def main():
             nv = convert(prop, val.strip(), on_blue)
             if nv != val.strip():
                 changed.append(f"{prop}:{nv}")
+        if changed and "background-clip:text" in body.replace(" ", "") and any(c.startswith("background:") for c in changed):
+            changed += ["-webkit-background-clip:text", "background-clip:text", "color:transparent"]
         if changed:
             rule = scope(sel) + "{" + ";".join(changed) + "}"
             out.append((media + "{" + rule + "}" if media else rule) + "\n")
@@ -132,7 +139,8 @@ EXTRA = """
 %(L)s .hdr.scrolled{background:rgba(244,246,249,.85)}
 %(L)s .btn{background:#FFFFFF;color:var(--text)}
 %(L)s .btn:hover{background:#F1F6FC}
-%(L)s .btn-primary,%(L)s .btn-primary:hover{color:#FFFFFF}
+%(L)s .btn-primary{background:linear-gradient(135deg,var(--blue),var(--deep));color:#FFFFFF}
+%(L)s .btn-primary:hover{background:linear-gradient(135deg,#3470d6,var(--blue));color:#FFFFFF}
 %(L)s .btn-white{background:linear-gradient(135deg,var(--blue),var(--deep));color:#FFFFFF}
 %(L)s .btn-white:hover{background:linear-gradient(135deg,#3470d6,var(--blue))}
 %(L)s .card:hover{box-shadow:0 40px 70px -40px rgba(42,99,196,.35)}
@@ -141,7 +149,11 @@ EXTRA = """
 %(L)s .ftr{background:linear-gradient(180deg,rgba(244,246,249,0),#EAEFF9 40%%)}
 %(L)s .brand img{filter:brightness(0) saturate(100%%) invert(13%%) sepia(44%%) saturate(2190%%) hue-rotate(201deg) brightness(92%%) contrast(98%%)}
 %(L)s .burger{color:var(--text)}
-%(L)s .theme-t{color:var(--text)}
+%(L)s .theme-t{color:var(--text);background:#FFFFFF}
+%(L)s .ox-badge{color:var(--deep);background:#EAEFF9}
+/* Morning: softer and airier than full daytime */
+html[data-phase="morning"]{--ink0:#F1F6FC}
+html[data-phase="morning"] .ambient{background:radial-gradient(900px 620px at 85%% -10%%,rgba(157,189,235,.45),transparent 60%%),radial-gradient(700px 520px at -10%% 40%%,rgba(199,217,243,.5),transparent 60%%),radial-gradient(800px 600px at 50%% 120%%,rgba(234,239,249,.8),transparent 60%%),#F1F6FC}
 """ % {"L": L}
 
 if __name__ == "__main__":
