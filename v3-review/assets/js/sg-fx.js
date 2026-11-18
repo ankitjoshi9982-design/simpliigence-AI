@@ -48,6 +48,31 @@
     tick(); setInterval(tick, 30000);
   });
 
+  /* ---------- time-of-day theme: auto / light / dark switch, live phase changes ---------- */
+  var root = d.documentElement, LABEL = { auto: 'automatic by time of day', light: 'light', dark: 'dark' };
+  function store(v) { try { localStorage.setItem('sg-theme', v); } catch (e) {} }
+  function apply(pref, fade) {
+    var p = pref === 'light' ? 'day' : pref === 'dark' ? 'night' : (w.sgPhase ? w.sgPhase(new Date().getHours()) : root.getAttribute('data-phase'));
+    var t = 'Colour theme: ' + LABEL[pref];
+    $$('[data-theme-toggle]').forEach(function (b) { b.setAttribute('aria-label', t); b.setAttribute('title', t); });
+    if (p === root.getAttribute('data-phase') && pref === root.getAttribute('data-pref')) return;
+    if (fade && !reduce) { root.classList.add('theme-fade'); setTimeout(function () { root.classList.remove('theme-fade'); }, 1200); }
+    root.setAttribute('data-phase', p);
+    root.setAttribute('data-mode', p === 'morning' || p === 'day' ? 'light' : 'dark');
+    root.setAttribute('data-pref', pref);
+  }
+  var stored = 'auto';
+  try { stored = localStorage.getItem('sg-theme') || 'auto'; } catch (e) {}
+  var pinned = /^(morning|day|evening|night)$/.test(stored);  /* review: show one phase */
+  $$('[data-theme-toggle]').forEach(function (b) { var t = 'Colour theme: ' + LABEL[root.getAttribute('data-pref') || 'auto']; b.setAttribute('aria-label', t); b.setAttribute('title', t); });
+  $$('[data-theme-toggle]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var next = { auto: 'light', light: 'dark', dark: 'auto' }[root.getAttribute('data-pref') || 'auto'];
+      pinned = false; store(next); apply(next, true);
+    });
+  });
+  setInterval(function () { if (!pinned && (root.getAttribute('data-pref') || 'auto') === 'auto') apply('auto', true); }, 60000);
+
   /* ---------- ecosystem: highlight a cluster's lines ---------- */
   $$('[data-eco]').forEach(function (eco) {
     var paths = $$('.eco-lines path', eco);

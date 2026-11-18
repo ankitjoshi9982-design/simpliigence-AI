@@ -63,19 +63,21 @@
     cv.parentNode.addEventListener('pointermove', function (e) { var r = cv.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
     var vis = true;
     if ('IntersectionObserver' in w) new IntersectionObserver(function (e) { vis = e[0].isIntersecting; }).observe(cv);
+    var net = '115,161,226', netT = 0;
     function frame() {
       if (vis) {
+        if (Date.now() - netT > 1000) { netT = Date.now(); net = (getComputedStyle(d.documentElement).getPropertyValue('--net') || '115,161,226').trim(); }
         cx.clearRect(0, 0, W, H);
         for (var i = 0; i < pts.length; i++) {
           var p = pts[i]; if (!reduce) { p.x += p.vx; p.y += p.vy; }
           if (p.x < 0 || p.x > W) p.vx *= -1; if (p.y < 0 || p.y > H) p.vy *= -1;
           for (var j = i + 1; j < pts.length; j++) {
             var q = pts[j], dx = p.x - q.x, dy = p.y - q.y, dd = dx * dx + dy * dy;
-            if (dd < 17000) { cx.strokeStyle = 'rgba(115,161,226,' + (0.18 * (1 - dd / 17000)) + ')'; cx.lineWidth = 1; cx.beginPath(); cx.moveTo(p.x, p.y); cx.lineTo(q.x, q.y); cx.stroke(); }
+            if (dd < 17000) { cx.strokeStyle = 'rgba(' + net + ',' + (0.18 * (1 - dd / 17000)) + ')'; cx.lineWidth = 1; cx.beginPath(); cx.moveTo(p.x, p.y); cx.lineTo(q.x, q.y); cx.stroke(); }
           }
           var md = Math.hypot(p.x - mouse.x, p.y - mouse.y), hot = md < 160;
-          if (hot) { cx.strokeStyle = 'rgba(115,161,226,' + (0.5 * (1 - md / 160)) + ')'; cx.beginPath(); cx.moveTo(p.x, p.y); cx.lineTo(mouse.x, mouse.y); cx.stroke(); }
-          cx.fillStyle = hot ? '#ffffff' : 'rgba(115,161,226,.75)'; cx.beginPath(); cx.arc(p.x, p.y, p.r, 0, 6.283); cx.fill();
+          if (hot) { cx.strokeStyle = 'rgba(' + net + ',' + (0.5 * (1 - md / 160)) + ')'; cx.beginPath(); cx.moveTo(p.x, p.y); cx.lineTo(mouse.x, mouse.y); cx.stroke(); }
+          cx.fillStyle = hot ? 'rgb(' + net + ')' : 'rgba(' + net + ',.75)'; cx.beginPath(); cx.arc(p.x, p.y, p.r, 0, 6.283); cx.fill();
         }
       }
       if (!reduce) requestAnimationFrame(frame);
