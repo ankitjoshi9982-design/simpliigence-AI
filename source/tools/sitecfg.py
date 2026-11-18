@@ -8,6 +8,7 @@ ORG = {
     "description": "Simpliigence AI is a next-generation AI platform partner: AI agents, AI workflow automation and enterprise AI solutions built on the platforms you already run, paid on the outcome they deliver.",
     "locations": ["New Jersey", "Toronto", "London", "Netherlands", "Bangalore"],
     "parent": "Simpliigence",
+    "linkedin": "https://www.linkedin.com/company/simpliigence/",
 }
 
 # slug: url, body key, nav label, title, meta, primary keyword, assistant chip key

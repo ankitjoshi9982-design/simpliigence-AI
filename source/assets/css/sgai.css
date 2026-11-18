@@ -349,6 +349,9 @@ sup a{color:var(--sky);font-size:.7em;font-family:var(--f-head);font-weight:600;
 .ftr-brand p{margin-top:18px;color:var(--text2);max-width:34ch}
 .ftr-mail{display:inline-flex;margin-top:18px;align-items:center;gap:10px;font-family:var(--f-head);font-weight:600;color:#fff}
 .ftr-mail .ico{color:var(--sky)}
+.ftr-li{display:flex;margin-top:12px;width:max-content}
+.btn-li .ico{color:var(--sky)}
+.btn-li:hover .ico{transform:none}
 .ftr-word{margin-top:clamp(36px,5vw,64px);font-family:var(--f-head);font-weight:800;letter-spacing:-.06em;line-height:1;padding-bottom:.12em;text-align:center;font-size:min(15vw,210px);color:transparent;-webkit-text-stroke:1px rgba(115,161,226,.2);user-select:none;white-space:nowrap;overflow:hidden}
 .ftr-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-block:22px;border-top:1px solid var(--line);color:var(--text3);font-size:14.5px}
 

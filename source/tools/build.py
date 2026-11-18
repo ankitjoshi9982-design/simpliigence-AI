@@ -40,7 +40,7 @@ def seo(slug):
       {"@type": "Organization", "@id": DOMAIN + "/#org", "name": ORG["name"], "url": DOMAIN + "/",
        "logo": DOMAIN + "/wp-content/themes/simpliigence-ai/assets/img/logo-white.png",
        "email": ORG["email"], "slogan": ORG["slogan"], "description": ORG["description"],
-       "parentOrganization": {"@type": "Organization", "name": ORG["parent"]},
+       "parentOrganization": {"@type": "Organization", "name": ORG["parent"]}, "sameAs": [ORG["linkedin"]],
        "contactPoint": {"@type": "ContactPoint", "email": ORG["email"], "contactType": "sales"},
        "address": {"@type": "PostalAddress", "addressRegion": "NJ", "addressCountry": "US"},
        "areaServed": ["US", "CA", "GB", "NL", "IN"]},

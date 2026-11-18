@@ -22,6 +22,7 @@ ICONS = {
  "tool": '<path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3z"/><path d="M14.5 6.5 17 4"/>',
  "chat": '<path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8"/>',
  "home": '<path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/>',
+ "linkedin": '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17"/><path d="M8 7.2v.1"/><path d="M12 17v-6.5"/><path d="M12 13.2c0-1.6 1-2.7 2.4-2.7S16.5 11.4 16.5 13v4"/>',
  "mail": '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
  "pin": '<path d="M12 21s-7-6.3-7-12a7 7 0 0 1 14 0c0 5.7-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/>',
  "check": '<path d="m5 12 4.5 4.5L19 7"/>',
