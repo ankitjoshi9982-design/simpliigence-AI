@@ -35,6 +35,7 @@ add_action( 'wp_enqueue_scripts', function () {
 	wp_enqueue_script( 'sgai-content', SGAI_URI . '/assets/js/sg-content.js', array(), SGAI_VER, true );
 	wp_enqueue_script( 'sgai', SGAI_URI . '/assets/js/sgai.js', array( 'sgai-content' ), SGAI_VER, true );
 	wp_enqueue_script( 'sgai-tools', SGAI_URI . '/assets/js/sg-tools.js', array( 'sgai' ), SGAI_VER, true );
+	wp_enqueue_script( 'sgai-fx', SGAI_URI . '/assets/js/sg-fx.js', array(), SGAI_VER, true );
 	wp_localize_script( 'sgai-content', 'SGAI', array(
 		'ajaxUrl'    => admin_url( 'admin-ajax.php' ),
 		'nonce'      => wp_create_nonce( 'sgai_lead' ),

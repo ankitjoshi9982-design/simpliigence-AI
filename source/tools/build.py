@@ -128,7 +128,7 @@ def build(slug, S):
 <link rel="preload" href="{base}assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{base}assets/css/sgai.css"></head><body data-sg-page="{key}">
 {header(url, "")}{body}{footer("")}
-<script>window.SGAI={{staticBase:"{base}",contactUrl:"{base}contact/index.html"}};</script><script src="{base}assets/js/sg-kb.js" defer></script><script src="{base}assets/js/sg-content.js" defer></script><script src="{base}assets/js/sgai.js" defer></script><script src="{base}assets/js/sg-tools.js" defer></script></body></html>'''
+<script>window.SGAI={{staticBase:"{base}",contactUrl:"{base}contact/index.html"}};</script><script src="{base}assets/js/sg-kb.js" defer></script><script src="{base}assets/js/sg-content.js" defer></script><script src="{base}assets/js/sgai.js" defer></script><script src="{base}assets/js/sg-tools.js" defer></script><script src="{base}assets/js/sg-fx.js" defer></script></body></html>'''
     page = re.sub(r'(href)="(/[^"]*)"', fix, page)
     page = page.replace('src="assets/', f'src="{base}assets/')
     d = OUT if depth == 0 else os.path.join(OUT, url.strip("/"))
