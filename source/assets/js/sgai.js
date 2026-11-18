@@ -230,7 +230,7 @@
   };
   Assistant.prototype.start = function () {};
   Assistant.prototype.contactBtns = function () {
-    return '<div class="btn-row"><a class="btn btn-primary btn-sm" href="' + contactUrl + '?type=Talk+to+an+Architect">Talk to an Architect</a><a class="btn btn-sm" href="' + contactUrl + '">Contact</a></div>';
+    return '<div class="btn-row"><a class="btn btn-primary btn-sm" href="' + contactUrl + '?type=Talk+to+an+Architect">Speak to a Human Architect</a><a class="btn btn-sm" href="' + contactUrl + '">Contact</a></div>';
   };
   Assistant.prototype.startLead = function () {
     var self = this; this.lead = { i: 0, data: {} }; this.leadOffered = true;

@@ -3,9 +3,9 @@ from icons import sprite, ico
 NAV = [
  ("Home", "/", None),
  ("Platform", None, [
-   ("Simpliigence AI", "/ai/", "layers", "Bring Your Own Intelligence · If you're an enterprise"),
-   ("Automation", "/automation/", "flow", "Outcome-as-a-Service · If you're a mid-market team"),
-   ("AI Agents", "/agents/", "bot", "AgentBox · If you're a growing business"),
+   ("Simpliigence AI", "/ai/", "layers", "If you're an enterprise"),
+   ("Outcome as a Service", "/automation/", "flow", "If you're a mid-market team"),
+   ("AI Agents", "/agents/", "bot", "If you're a growing business"),
  ]),
  ("Industries", "/industries/", None),
  ("Resources", "/resources/", None),
@@ -41,12 +41,12 @@ def header(page, base):
 <header class="hdr" id="hdr"><div class="wrap hdr-in">
 <a class="brand" href="{u('/')}" aria-label="Simpliigence AI home"><img src="{base}assets/img/logo-white.png" alt="Simpliigence" width="160" height="30"><span class="ai">AI</span></a>
 <nav aria-label="Main"><ul class="nav">{''.join(items)}</ul></nav>
-<div class="hdr-cta"><a class="btn btn-sm" href="{ta}">Talk to an Architect</a><a class="btn btn-primary btn-sm" href="{hc}">Book an AI Health Check</a>
+<div class="hdr-cta"><a class="btn btn-sm btn-human" href="{ta}" aria-label="Speak to a Human Architect">{ico("user")}<span>Speak to a Human Architect</span></a><a class="btn btn-primary btn-sm" href="{hc}">Book an AI Health Check</a>
 <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">{ico("menu")}</button></div>
 </div></header>
 <div class="sheet" id="sheet" aria-hidden="true"><div class="sheet-top"><a class="brand" href="{u('/')}"><img src="{base}assets/img/logo-white.png" alt="Simpliigence" width="160" height="30"><span class="ai">AI</span></a><button class="burger" style="display:grid" id="sheetX" aria-label="Close menu">{ico("x")}</button></div>
 <nav aria-label="Mobile">{''.join(sheet_links)}</nav>
-<div class="btn-row"><a class="btn btn-primary" href="{hc}">Book an AI Health Check{ico("arrow")}</a><a class="btn" href="{ta}">Talk to an Architect</a></div></div>
+<div class="btn-row"><a class="btn btn-primary" href="{hc}">Book an AI Health Check{ico("arrow")}</a><a class="btn" href="{ta}">{ico("user")}Speak to a Human Architect</a></div></div>
 <main id="main">'''
 
 def footer(base):
@@ -58,7 +58,7 @@ def footer(base):
 <p>Outcomes, by design.</p>
 <a class="ftr-mail" href="mailto:hello@simpliigence.ai">{ico("mail")}hello@simpliigence.ai</a>
 <p class="muted" style="margin-top:10px;font-size:15px">New Jersey · Toronto · London · Netherlands · Bangalore</p></div>
-<div><h4>Ways in</h4><ul><li><a href="{u('/ai/')}">Simpliigence AI</a></li><li><a href="{u('/automation/')}">Simpliigence Automation</a></li><li><a href="{u('/agents/')}">AI Agents</a></li></ul></div>
+<div><h4>Ways in</h4><ul><li><a href="{u('/ai/')}">Simpliigence AI</a></li><li><a href="{u('/automation/')}">Outcome as a Service</a></li><li><a href="{u('/agents/')}">AI Agents</a></li></ul></div>
 <div><h4>Explore</h4><ul><li><a href="{u('/industries/')}">Industries</a></li><li><a href="{u('/resources/')}">Resources</a></li><li><a href="{u('/tools/')}">Tools</a></li></ul></div>
 <div><h4>Company</h4><ul><li><a href="{u('/company/')}">About</a></li><li><a href="{u('/contact/')}">Contact</a></li><li><a href="{u('/contact/?type=Book+an+AI+Health+Check')}">Book an AI Health Check</a></li></ul></div>
 </div>
@@ -70,7 +70,7 @@ def footer(base):
 <a class="brand" href="{u('/')}"><img src="{base}assets/img/logo-white.png" alt="Simpliigence" width="160" height="30"><span class="ai">AI</span></a>
 <button class="ai-new" type="button" data-new>{ico("spark")}New chat</button>
 <div class="ai-rail-chips" data-chips></div>
-<div class="ai-rail-foot"><a class="btn btn-primary btn-sm" href="{u('/contact/?type=Book+an+AI+Health+Check')}">Book an AI Health Check</a><a class="btn btn-sm" href="{u('/contact/?type=Talk+to+an+Architect')}">Talk to an Architect</a>
+<div class="ai-rail-foot"><a class="btn btn-primary btn-sm" href="{u('/contact/?type=Book+an+AI+Health+Check')}">Book an AI Health Check</a><a class="btn btn-sm" href="{u('/contact/?type=Talk+to+an+Architect')}">Speak to a Human Architect</a>
 </div>
 </aside>
 <section class="ai-main">

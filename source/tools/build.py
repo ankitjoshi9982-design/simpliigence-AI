@@ -139,7 +139,7 @@ def llms(seos):
     home = seos["home"]
     lines = ["# Simpliigence AI", "", "> " + home["meta"], "",
              "Simpliigence AI helps teams prioritise, scale, reach value sooner and keep AI tied to business outcomes, using the platforms they already have. "
-             "Three ways in: AI Agents (AgentBox) for growing businesses, Automation (Outcome-as-a-Service) for mid-market teams, and Simpliigence AI (Bring Your Own Intelligence) for enterprises.",
+             "Three ways in: AI Agents for growing businesses, Outcome as a Service for mid-market teams, and Simpliigence AI for enterprises.",
              "", "## Pages"]
     for s in seos.values():
         lines.append(f"- [{s['label']}]({DOMAIN}{s['url']}): {s['meta']}")
@@ -183,7 +183,7 @@ if __name__ == "__main__":
             kb.append({"title": "AI Agents — " + text(t), "url": "/agents/#library", "excerpt": text(t) + " " + text(d), "keywords": [text(t).rstrip(".").lower() + " agents", text(t).rstrip(".").lower()]})
     au = open(os.path.join(ROOT, "content", "automation.html")).read()
     mv = " ".join(text(t) + " " + text(d) for t, d in re.findall(r'<article class="card move[^"]*"><span class="ci">.*?</span><h3>(.*?)</h3><p>(.*?)</p>', au, re.S))
-    kb.append({"title": "Automation — What we move", "url": "/automation/", "excerpt": mv, "keywords": ["kpis can you move", "kpi", "kpis", "what we move", "metrics"]})
+    kb.append({"title": "Outcome as a Service — What we move", "url": "/automation/", "excerpt": mv, "keywords": ["kpis can you move", "kpi", "kpis", "what we move", "metrics"]})
     kb.append({"title": "Simpliigence AI — Copilot", "url": "/ai/", "excerpt": "You already license Claude, Copilot or Agentforce. We turn it into agents that run in production, inside your tenant and your region, and we're paid at each gate they pass.", "keywords": ["put copilot to real work", "copilot", "copilot licence", "copilot license", "licence"]})
     EXTRA = {  # extra search words for specific entries (never shown)
         "Industries — Staffing": ["recruitment", "recruiting", "hiring", "candidates"],

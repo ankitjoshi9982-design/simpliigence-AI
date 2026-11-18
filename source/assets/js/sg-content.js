@@ -48,7 +48,7 @@ window.SG_CONTENT = (function () {
       keywords: ['outcome contract', 'pricing model', 'success fee', 'kpi', 'outcome-as-a-service']
     },
     {
-      title: 'Simpliigence AI — Bring Your Own Intelligence',
+      title: 'Simpliigence AI',
       url: R + '/ai/',
       excerpt: 'You already license Claude, Copilot or Agentforce. We turn it into agents that run in production, inside your tenant and your region, and we’re paid at each gate they pass.',
       keywords: ['enterprise ai solutions', 'own tenant', 'data residency', 'bring your own intelligence', 'own model and stack']
@@ -66,19 +66,19 @@ window.SG_CONTENT = (function () {
       keywords: ['health check', 'what happens in a health check', 'discovery sprint']
     },
     {
-      title: 'Automation — Outcome-as-a-Service',
+      title: 'Outcome as a Service',
       url: R + '/automation/',
       excerpt: 'We size the leak before you pay anything, and we get paid when it closes. A small retainer up front, the rest tied to one KPI you choose.',
       keywords: ['outcome pricing', 'how does outcome pricing work', 'workflow automation', 'ai workflow automation']
     },
     {
-      title: 'Automation — RPA or an AI agent?',
+      title: 'Outcome as a Service — RPA or an AI agent?',
       url: R + '/automation/#faq',
       excerpt: 'It depends on how much the process changes. Stable, high-volume steps suit RPA; work that shifts or needs judgment suits an agent.',
       keywords: ['rpa or agent', 'rpa vs ai agent', 'which do i need']
     },
     {
-      title: 'AI Agents — AgentBox',
+      title: 'AI Agents',
       url: R + '/agents/',
       excerpt: 'Pick agents from a library of 36. We set them up in the tools you already use, run them, and tune them every month. One flat fee.',
       keywords: ['ai agents', 'agentbox', 'do i need an it team', 'which three agents', 'small business ai']
