@@ -29,11 +29,10 @@
     zone.addEventListener('pointerleave', function () { b.style.setProperty('--tx', '0px'); b.style.setProperty('--ty', '0px'); });
   });
 
-  /* ---------- office clocks: which teams are in working hours right now ---------- */
+  /* ---------- office clocks: local time, lit when in working hours ---------- */
   $$('[data-hx]').forEach(function (hx) {
-    var zones = $$('[data-tz]', hx), status = hx.querySelector('[data-hx-status]');
+    var zones = $$('[data-tz]', hx);
     function tick() {
-      var open = [];
       zones.forEach(function (z) {
         var tz = z.getAttribute('data-tz'), now = new Date(), t, h;
         try {
@@ -44,9 +43,7 @@
         var on = h >= 9 && h < 18 && wd !== 'Sat' && wd !== 'Sun';
         z.classList.toggle('on', on);
         z.querySelector('time').textContent = t;
-        if (on) open.push(z.querySelector('b').textContent);
       });
-      if (status) status.textContent = open.length ? 'In office now: ' + open.join(', ') : 'Architects across three time zones';
     }
     tick(); setInterval(tick, 30000);
   });

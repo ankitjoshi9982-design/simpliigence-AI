@@ -58,7 +58,7 @@ def footer(base):
 <div class="ftr-brand"><a class="brand" href="{u('/')}"><img src="{base}assets/img/logo-white.png" alt="Simpliigence" width="160" height="30"><span class="ai">AI</span></a>
 <p>Outcomes, by design.</p>
 <a class="ftr-mail" href="mailto:hello@simpliigence.ai">{ico("mail")}hello@simpliigence.ai</a>
-<a class="ftr-mail ftr-li" href="{ORG['linkedin']}" target="_blank" rel="noopener">{ico("linkedin")}Simpliigence on LinkedIn</a>
+<a class="ftr-mail ftr-li" href="{ORG['linkedin']}" target="_blank" rel="noopener">{ico("linkedin")}LinkedIn</a>
 <p class="muted" style="margin-top:10px;font-size:15px">New Jersey · Toronto · London · Netherlands · Bangalore</p></div>
 <div><h4>Ways in</h4><ul><li><a href="{u('/ai/')}">Simpliigence AI</a></li><li><a href="{u('/automation/')}">Outcome as a Service</a></li><li><a href="{u('/agents/')}">AI Agents</a></li></ul></div>
 <div><h4>Explore</h4><ul><li><a href="{u('/industries/')}">Industries</a></li><li><a href="{u('/resources/')}">Resources</a></li><li><a href="{u('/tools/')}">Tools</a></li></ul></div>
